@@ -28,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='Tinder Regist v0.2.3',
+    name='Tinder Regist',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

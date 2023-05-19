@@ -18,15 +18,28 @@ russian_female_names = ['Anastasia', 'Maria', 'Daria', 'Yulia', 'Anna', 'Ekateri
                         'Irina', 'Taisiya', 'Anna', 'Yana', 'Elizaveta', 'Polina', 'Kseniya', 'Aleksandra', 'Olivia',
                         'Mariya', 'Eva', 'Sara', 'Lidiya', 'Alina', 'Raisa', 'Victoria', 'Kira', 'Yekaterina', 'Alienor']
 
+russian_male_names = ['Александр', 'Алексей', 'Анатолий', 'Андрей', 'Антон', 'Аркадий', 'Арсений', 'Артем', 'Борис',
+    'Вадим', 'Валентин', 'Валерий', 'Василий', 'Виктор', 'Виталий', 'Владимир', 'Владислав', 'Вячеслав', 'Геннадий',
+    'Георгий',  'Глеб', 'Григорий', 'Даниил', 'Денис', 'Дмитрий', 'Евгений', 'Егор', 'Иван', 'Игорь', 'Илья',
+    'Константин', 'Лев', 'Леонид', 'Максим', 'Марат', 'Марк', 'Михаил', 'Никита', 'Николай', 'Олег', 'Павел',
+    'Петр', 'Роман', 'Руслан', 'Семен', 'Сергей', 'Станислав', 'Тимур', 'Федор', 'Юрий', 'Ярослав']
+
 config = configparser.ConfigParser()
 
 config.read('config.ini')
-photos_dir = config.get('Settings', 'photos_folder')
+photos_dir = config.get('Settings', 'photos_dir')
 dir = config.get('Settings', 'dir')
 city = config.get('Settings', 'geo')
 port = config.get('Settings', 'port')
 group_id = config.get('Settings', 'group_id')
+reg_variable = config.get('Settings', 'reg_variable')
 PASSWORD = 'PASS'
+
+RED = "\033[31m"
+BLUE = "\033[34m"
+BOLD = "\033[1m"
+RESET = "\033[0m"
+YELLOW = "\033[33m"
 
 if PASSWORD in os.environ:
     password = os.environ[PASSWORD]
@@ -60,6 +73,8 @@ def google_auth(driver, email, password, reserve):
     nextButton[0].click()
 
     time.sleep(3)
+
+    """Здесь запихнуть проверку на 3 сегмент"""
 
     try:
         driver.find_element(By.XPATH, "(//div[contains(@role,'link')])[4]").click()
@@ -129,7 +144,7 @@ def registration(driver):
     time.sleep(3)
     driver.find_element(By.XPATH, "//div[@role='button']").click()
     driver.find_element(By.XPATH, "//input[@name='phone_number']").send_keys(phone_number)
-    time.sleep(0.5)
+    time.sleep(2)
     driver.find_element(By.XPATH, "//div[contains(text(),'Continue')]").click()
     time.sleep(30)
     sms = get_code(id)
@@ -195,18 +210,32 @@ def model_profile(driver):
     except:
         pass
     time.sleep(2)
-    acc_name = russian_female_names[random.randint(0, 99)]
-    driver.find_element(By.XPATH, "//input[@id='name']").send_keys(acc_name)
+    female_name = russian_female_names[random.randint(0, 99)]
+    male_name = russian_male_names[random.randint(0, 49)]
     time.sleep(1)
     driver.find_element(By.XPATH, "//input[@placeholder='MM']").send_keys(random.randint(1, 12))
     time.sleep(1)
     driver.find_element(By.XPATH, "//input[@placeholder='DD']").send_keys(random.randint(1, 28))
     time.sleep(1)
-    driver.find_element(By.XPATH, "//input[@placeholder='YYYY']").send_keys(random.randint(1998, 2003))
+
+    if reg_variable == 'female':
+        driver.find_element(By.XPATH, "//input[@id='name']").send_keys(female_name)
+        time.sleep(0.5)
+        driver.find_element(By.XPATH, "//input[@placeholder='YYYY']").send_keys(random.randint(1998, 2003))
+        time.sleep(0.5)
+        driver.find_element(By.XPATH, "//span[normalize-space()='Woman']").click()
+        time.sleep(0.5)
+        driver.find_element(By.XPATH, "//span[normalize-space()='Men']").click()
+    else:
+        driver.find_element(By.XPATH, "//input[@id='name']").send_keys(male_name)
+        time.sleep(0.5)
+        driver.find_element(By.XPATH, "//input[@placeholder='YYYY']").send_keys(random.randint(1990, 1998))
+        time.sleep(0.5)
+        driver.find_element(By.XPATH, "//span[normalize-space()='Man']").click()
+        time.sleep(0.5)
+        driver.find_element(By.XPATH, "//span[normalize-space()='Women']").click()
     time.sleep(1)
-    driver.find_element(By.XPATH, "//span[normalize-space()='Woman']").click()
-    time.sleep(1)
-    driver.find_element(By.XPATH, "//span[normalize-space()='Men']").click()
+
 
 def model_profile_2(driver):
     time.sleep(2)
@@ -322,12 +351,15 @@ def check():
     except:
         print(f'Подключение к порту {port} не удалось установить \x1b[31m\x1b[1m✗\x1b[0m')
     time.sleep(0.5)
-
-
+    if reg_variable == "female":
+        print("Ты регистрируешь " + RESET + RED + BOLD + "Женские" + RESET + " Аккаунты")
+    else:
+        print("Ты регистрируешь " + RESET + BLUE + BOLD + "Мужские" + RESET + " Аккаунты")
 
 def reg():
     """Сделать блок на проверку целосности путей, и вообще на работоспособность, если ошибка, тогда причину ошибки"""
-    print("Проверка состояния\n")
+    print(YELLOW + BOLD + "Проверка состояния...\n" + RESET)
+    time.sleep(0.5)
     check()
     #val = input("Введите 'con' для продолжения, или 'ext' для завершения")
     val = input("Готов продолжить? Y/N\n")
@@ -346,7 +378,11 @@ def reg():
             try:
                 email, password, reserve, driver, photos_folder = start_session(port, city, group_id)
             except:
-                continue
+                print("Ошибка при создании сессии, проверь EXEL файл, возможно он открыт")
+                time.sleep(0.5)
+                input("Если проверил, и всё закрыто, нажми ENTER для перезпуска")
+                email, password, reserve, driver, photos_folder = start_session(port, city, group_id)
+
             """Log in into your google account"""
             try:
                 google_auth(driver, email, password, reserve)

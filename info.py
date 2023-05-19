@@ -213,7 +213,12 @@ def fold_names(photos_dir, photos_folder):
     subfolders = []
     for item in os.listdir(photos_dir):
         item_path = os.path.join(photos_dir, item)
-        if os.path.isdir(item_path) and item.startswith(photos_folder[0]):
+        prefix = ""
+        for char in photos_folder:
+            if char.isdigit():
+                break
+            prefix += char
+        if os.path.isdir(item_path) and item.startswith(prefix):
             subfolders.append(item)
     return subfolders
 
