@@ -10,7 +10,6 @@ config = configparser.ConfigParser()
 
 config.read('config.ini')
 photos_dir = config.get('Settings', 'photos_dir')
-dir = config.get('Settings', 'dir')
 city = config.get('Settings', 'geo')
 port = config.get('Settings', 'port')
 group_id = config.get('Settings', 'group_id')

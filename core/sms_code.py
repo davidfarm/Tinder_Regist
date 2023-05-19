@@ -18,6 +18,11 @@ def registration(driver):
     driver.find_element(By.XPATH, "//input[@name='phone_number']").send_keys(phone_number)
     time.sleep(2)
     driver.find_element(By.XPATH, "//div[contains(text(),'Continue')]").click()
+    try:
+        time.sleep(1)
+        driver.find_element(By.XPATH, "//div[contains(text(),'Continue')]").click()
+    except:
+        pass
     time.sleep(30)
     sms = get_code(id)
     if sms["message"] == "Waiting for sms":
