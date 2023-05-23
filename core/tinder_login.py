@@ -173,4 +173,6 @@ def model_profile_2(driver):
         driver.find_element(By.XPATH, "(//div[@class='l17p5q9z'])[8]").click()
     time.sleep(2)
     driver.find_element(By.XPATH, "(//button[@role='option'])[3]").click()
+    time.sleep(0.5)
+    driver.find_element(By.XPATH, "//div[contains(text(),'Continue')]").click()
     continue_btn.click()

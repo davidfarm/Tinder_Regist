@@ -1,5 +1,5 @@
-from geo_randomizer_polygon import get_points, group_id_list
-
+from lib.geo_randomizer_polygon import get_points, group_id_list
+import configparser
 from core.check import *
 from core.sms_code import *
 from core.tinder_login import *
@@ -129,10 +129,10 @@ def reg():
 
             """Submiting your phone number"""
             try:
-                registration(driver)
+                sms_registration(driver)
             except:
                 traceback.print_exc()
-                continue_var = input_dialog(registration, "Ошибка при вводе номера   ", driver)
+                continue_var = input_dialog(sms_registration, "Ошибка при вводе номера   ", driver)
                 if continue_var:
                     continue
 
@@ -162,9 +162,15 @@ def reg():
             time.sleep(10)
             """Allowing notifications"""
             try:
-                driver.find_element(By.XPATH, "(//div[contains(text(),'Allow')])[1]").click()
+                try:
+                    driver.find_element(By.XPATH, "//div[@class='l17p5q9z'][normalize-space()='Allow']").click()
+                except:
+                    driver.find_element(By.XPATH, "(//div[contains(text(),'Allow')])[1]").click()
                 time.sleep(2)
-                driver.find_element(By.XPATH, "//div[contains(text(),'Enable')]").click()
+                try:
+                    driver.find_element(By.XPATH, "//div[@class='l17p5q9z'][normalize-space()='Enable']").click()
+                except:
+                    driver.find_element(By.XPATH, "//div[contains(text(),'Enable')]").click()
                 time.sleep(3)
             except:
                 h = input("Отправьте мне любой символ после регистрации   ")

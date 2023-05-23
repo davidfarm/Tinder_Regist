@@ -1,9 +1,9 @@
 import re, time
 from selenium.webdriver.common.by import By
-from sms_activate import get_sms, get_code
+from lib.sms_activate import get_sms, get_code
 
 
-def registration(driver):
+def sms_registration(driver):
     """Account registration"""
     driver.find_element(By.XPATH, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]").click()
     country, phone_number, id = get_sms("United Kingdom", "Lithuania", "Sweden", 16, 44, 46, 2, 3, 1)
