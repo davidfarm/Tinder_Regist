@@ -10,6 +10,12 @@ def scan_photos_id(session_name):
         photo_id = result.group(1)
     return photo_id
 
+def scan_name_id(session_name):
+    result = re.search(r"(.+?)/", session_name)
+    if result:
+        name_id = result.group(1)
+    return name_id
+
 """Не используется в Tinder REG"""
 def df_to_gsheets(df, spreadsheet_name, worksheet_name):
     """Sending df to google sheets"""
@@ -223,9 +229,14 @@ def fold_names(photos_dir, photos_folder):
     return subfolders
 
 def color():
+    """ANSI Color"""
     RED = "\033[31m"
     BLUE = "\033[34m"
     BOLD = "\033[1m"
     RESET = "\033[0m"
     YELLOW = "\033[33m"
-    return RED, BOLD, BLUE, RESET, YELLOW
+    PURPLE = "\033[95m"
+    LIGRED = "\033[91m"
+    DARK_YELLOW = "\033[33m"
+    return RED, BOLD, BLUE, RESET, YELLOW, PURPLE, LIGRED, DARK_YELLOW
+

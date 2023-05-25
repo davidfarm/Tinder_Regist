@@ -2,6 +2,7 @@ import time, traceback, configparser, random
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.file_detector import UselessFileDetector
 from lib.info import *
+from lib.error import *
 
 russian_female_names_en = ['Anastasia', 'Maria', 'Daria', 'Yulia', 'Anna', 'Ekaterina', 'Olga', 'Natalia', 'Elena',
                         'Irina', 'Alexandra', 'Polina', 'Ksenia', 'Kristina', 'Vera', 'Tatiana', 'Sofiya', 'Alina',
@@ -61,13 +62,15 @@ config.read('config.ini')
 reg_variable = config.get('Settings', 'reg_variable')
 name_variation = config.get('Settings', 'name_variation')
 
+@error_handler("login_in_tinder")
 def login_in_tinder(driver):
     """Logining in Tinder"""
     time.sleep(1)
     driver.get("https://tinder.com")
     time.sleep(8)
     try:
-        driver.find_element(By.XPATH, "//div[@class='D(f)--ml']//div[1]//button[1]//div[2]//div[2]").click()
+        handle_error_click(driver, "//div[@class='D(f)--ml']//div[1]//button[1]//div[2]//div[2]", 105)
+#        driver.find_element(By.XPATH, "//div[@class='D(f)--ml']//div[1]//button[1]//div[2]//div[2]").click()
     except:
         pass
     driver.find_element(By.CSS_SELECTOR, "a[class='c1p6lbu0 Miw(120px)'] div[class='l17p5q9z']").click()
@@ -75,9 +78,11 @@ def login_in_tinder(driver):
     driver.switch_to.frame(driver.find_element(By.TAG_NAME, "iframe"))
     time.sleep(6)
     try:
-        driver.find_element(By.XPATH, "//span[@class='nsm7Bb-HzV7m-LgbsSe-BPrWId']").click()
+        handle_error_click(driver, "//span[@class='nsm7Bb-HzV7m-LgbsSe-BPrWId']", 105)
+#        driver.find_element(By.XPATH, "//span[@class='nsm7Bb-HzV7m-LgbsSe-BPrWId']").click()
     except:
-        driver.find_element(By.XPATH, "/html[1]/body[1]").click()
+        handle_error_click(driver, "/html[1]/body[1]", 105)
+#       driver.find_element(By.XPATH, "/html[1]/body[1]").click()
     time.sleep(5)
     driver.switch_to.window(driver.window_handles[1])
     time.sleep(5)
@@ -95,7 +100,7 @@ def login_in_tinder(driver):
     except:
         traceback.print_exc()
         pass
-
+@error_handler("photos_fold")
 def photos_fold(driver, photos_dir, photos_folder):
     time.sleep(1)
     driver.file_detector = UselessFileDetector()
@@ -109,15 +114,18 @@ def photos_fold(driver, photos_dir, photos_folder):
     for ph_id in photos_path:
         ph_id1 = os.path.abspath(ph_id)
         driver.find_element(By.XPATH, "//input[@type='file']").send_keys(ph_id1)
-        time.sleep(1)
-        driver.find_element(By.XPATH, "//div[contains(text(),'Choose')]").click()
+        time.sleep(2)
+        try:
+            driver.find_element(By.XPATH, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/button[2]/div[2]/div[2]").click()
+        except:
+            driver.find_element(By.CSS_SELECTOR, "button[class='c1p6lbu0'] div[class='l17p5q9z']").click()
         time.sleep(2)
 
 """Java распаковка"""
 #   file_input = driver.find_element(By.XPATH, "//input[@type='file']")
 #   file_path = r"C:\Users\Мерлин\Мой диск\Мерлин\photo_2022-11-28_20-29-13.jpg"
 #   driver.execute_script("arguments[0].setAttribute('value', arguments[1]);", file_input, file_path)
-
+@error_handler("model_profile")
 def model_profile(driver):
     """Creation of Tinder profile"""
     try:
@@ -158,7 +166,7 @@ def model_profile(driver):
         driver.find_element(By.XPATH, "//span[normalize-space()='Women']").click()
     time.sleep(1)
 
-
+@error_handler("model_profile_2")
 def model_profile_2(driver):
     time.sleep(2)
     driver.execute_script("window.scrollTo(0, 1080)")
@@ -173,6 +181,20 @@ def model_profile_2(driver):
         driver.find_element(By.XPATH, "(//div[@class='l17p5q9z'])[8]").click()
     time.sleep(2)
     driver.find_element(By.XPATH, "(//button[@role='option'])[3]").click()
-    time.sleep(0.5)
-    driver.find_element(By.XPATH, "//div[contains(text(),'Continue')]").click()
+    time.sleep(1)
+    try:
+        driver.find_element(By.XPATH, "//div[contains(text(),'Continue')]").click()
+    except:
+        driver.find_element(By.CSS_SELECTOR, "button[type='submit'] div[class='l17p5q9z']").click()
     continue_btn.click()
+
+def end_registr(driver):
+    time.sleep(7)
+    try:
+        handle_error_click(driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[3]/button[1]/div[2]/div[2]", 105)
+        time.sleep(1)
+        handle_error_click(driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[3]/button[1]/div[2]/div[2]", 105)
+        time.sleep(1)
+    except:
+        pass
+
