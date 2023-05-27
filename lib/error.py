@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 import traceback, inspect
 from core.check import *
@@ -33,6 +35,19 @@ def error_find_element(driver, xpath,error_code):
     element = driver.find_element(By.XPATH, xpath)
 
 """time.sleep итератор, чтоб не ждать фиксировано 5 сек, а итерировать при ошибке 5 раз за каждую сек"""
+
+def timer(t_func, *args, **kwargs):
+    for i in range(30):
+        time.sleep(0.5)
+        try:
+            result = t_func(*args, **kwargs)
+            break
+        except Exception as e:
+#            print(i)   #debug
+            pass
+
+    return result
+
 
 
 def handle_error_send_keys(driver, xpath, key, error_code):
@@ -78,6 +93,8 @@ def error_handler(func_name):
                     elif continue_var == "10":
                         print("Всегда помни Десятое правило")
                         continue
+                    elif continue_var == "ку":
+                        print(BOLD + RED + "КУ-КУ Блядь." + RESET)
                     else:
                         print(LIGRED + "Неверный ввод, попробуйте снова." + RESET)
         return wrapper
@@ -86,7 +103,7 @@ def error_handler(func_name):
 def input_dialog(func, text):
     while True:
         user_input = input(text)
-        if user_input in ["re", "skip", "next", "10"]:
+        if user_input in ["re", "skip", "next", "10", "ку"]:
             return user_input
         else:
             print("Неверный ввод, попробуйте снова.")

@@ -6,23 +6,19 @@ from lib.error import *
 @error_handler("sms_registration")
 def sms_registration(driver):
     """Account registration"""
-    time.sleep(12)
-    driver.find_element(By.XPATH, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]").click()
+    timer(handle_error_click, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]", 105)
     country, phone_number, id = get_sms("United Kingdom", "Lithuania", "Sweden", 16, 44, 46, 2, 3, 1)
-    time.sleep(2)
     try:
-        driver.find_element(By.XPATH, "//input[@placeholder='Search']").send_keys(country)
+        timer(handle_error_send_keys, driver, "//input[@placeholder='Search']", country, 110)
     except:
+        time.sleep(2)
         driver.find_element(By.TAG_NAME, "input").send_keys(country)
         pass
-    time.sleep(3)
-    driver.find_element(By.XPATH, "//div[@role='button']").click()
-    driver.find_element(By.XPATH, "//input[@name='phone_number']").send_keys(phone_number)
-    time.sleep(2)
-    driver.find_element(By.XPATH, "//div[contains(text(),'Continue')]").click()
+    timer(handle_error_click, driver, "//div[@role='button']", 105)
+    timer(handle_error_send_keys, driver, "//input[@name='phone_number']",phone_number, 110)
+    timer(handle_error_click, driver, "//div[contains(text(),'Continue')]", 105)
     try:
-        time.sleep(1)
-        driver.find_element(By.XPATH, "//div[contains(text(),'Continue')]").click()
+        timer(handle_error_click, driver, "//div[contains(text(),'Continue')]", 110)
     except:
         pass
     time.sleep(30)
@@ -45,13 +41,12 @@ def sms_registration(driver):
         sms = get_code(id)
 
     code = re.sub('\D', '', sms["status"].strip())
-    driver.find_element(By.XPATH, "//input[@aria-label='OTP code digit 1']").send_keys(code)
-    time.sleep(3)
-    driver.find_element(By.XPATH, "//div[contains(text(),'Continue')]").click()
-    time.sleep(5)
+    timer(handle_error_send_keys, driver, "//input[@aria-label='OTP code digit 1']", code, 110)
+    timer(handle_error_click, driver, "//div[contains(text(),'Continue')]", 105)
 
     """Проверка на бан"""
     try:
+        time.sleep(2)
         driver.find_element(By.XPATH, "//div[@class='CenterAlign Fxd(c) M(a)']")
     except:
         pass
