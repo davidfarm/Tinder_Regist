@@ -4,6 +4,8 @@ from core.core import *
 from core.google_auto import *
 from core.tinder_login import *
 from lib.geo_randomizer_polygon import get_points, group_id_list
+from lib.soax_api import stick
+
 
 def new_session(session_name, proxy_host, proxy_port, proxy_type, proxy_username, proxy_password, latitude, longitude, port, city, group_ids):
     """Creating new session"""
@@ -30,24 +32,18 @@ def start_session(port, city, group_id):
     group_ids = group_id_list(group_id, port)
     session_name = parse_line("res/session_names")
     photos_folder = scan_photos_id(session_name)
+    name_id = scan_name_id(session_name)
+    proxy_path_url = stick(name_id)
+
     proxy_host = "proxy.soax.com"
     proxy_type = "SOCKS"
-    proxy_username = "rUfgRb6QMNgjiLYv"
-    proxy_password = "wifi;fr;;;paris"
-    ports = ["9266", "9267", "9268", "9269", "9270", "9271", "9272", "9273", "9274", "9275",
-                "9276", "9277", "9278", "9279", "9280", "9281", "9282", "9283", "9284", "9285",
-                "9286", "9287", "9288", "9289", "9290", "9291", "9292", "9293", "9294", "9295",
-                "9296", "9297", "9298", "9299", "9300", "9301", "9302", "9303", "9304", "9305",
-                "9306", "9307", "9308", "9309", "9310", "9311", "9312", "9313", "9314", "9315",
-                "9316", "9317", "9318", "9319", "9320", "9321", "9322", "9323", "9324", "9325",
-                "9326", "9327", "9328", "9329", "9330", "9331", "9332", "9333", "9334", "9335",
-                "9336", "9337", "9338", "9339", "9340", "9341", "9342", "9343", "9344", "9345",
-                "9346", "9347", "9348", "9349", "9350", "9351", "9352", "9353", "9354", "9355",
-                "9356", "9357", "9358", "9359", "9360", "9361", "9362", "9363", "9364", "9365"]
-    proxy_port = ports[random.randint(0,99)]
+    proxy_username = proxy_path_url
+    proxy_password = "rUfgRb6QMNgjiLYv"
+    proxy_port = "5000"
+
     driver, profile_id = new_session(session_name, proxy_host, proxy_port, proxy_type, proxy_username, proxy_password, latitude,
                          longitude, port, city, group_ids)
-    return email, password, reserve, driver, photos_folder, session_name, group_ids, profile_id
+    return email, password, reserve, driver, photos_folder, session_name, group_ids, profile_id, name_id
 
 def rename(port, profile_id, session_name, group_ids):
     session_rename = session_name + " !reg"

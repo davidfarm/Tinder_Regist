@@ -1,4 +1,4 @@
-import requests, re, string, json, gspread, os, natsort
+import requests, re, string, json, gspread, os, natsort, openpyxl
 from selenium import webdriver
 import pandas as pd
 from oauth2client.service_account import ServiceAccountCredentials
@@ -240,3 +240,13 @@ def color():
     DARK_YELLOW = "\033[33m"
     return RED, BOLD, BLUE, RESET, YELLOW, PURPLE, LIGRED, DARK_YELLOW
 
+def check_gmail():
+    workbook = openpyxl.load_workbook('res/gmail.xlsx')
+    worksheet = workbook['Sheet1']
+    count_email = 0
+    for cell in worksheet['A2:A' + str(worksheet.max_row)]:
+        for row in cell:
+            if row.value:
+                count_email += 1
+
+    return count_email

@@ -18,18 +18,14 @@ def check():
         print("Путь в норме \u2705")
     else:
         print("Путь не верный \x1b[31m\x1b[1m✗\x1b[0m")
+
     time.sleep(0.5)
     try:
-        workbook = openpyxl.load_workbook('res/gmail.xlsx')
-        worksheet = workbook['Sheet1']
-        count_email = 0
-        for cell in worksheet['A2:A' + str(worksheet.max_row)]:
-            for row in cell:
-                if row.value:
-                    count_email += 1
+        count_email = check_gmail()
         print(f"Кол-во почт в программе: {count_email}")
     except:
         pass
+
     time.sleep(0.5)
     try:
         filename = 'res/session_names'
@@ -43,6 +39,7 @@ def check():
     except:
         pass
     time.sleep(0.5)
+
     url = f'http://127.0.0.1:{port}'
     try:
         requests.get(url, timeout=1)
@@ -50,6 +47,7 @@ def check():
     except:
         print(f'Подключение к порту {port} не удалось установить \x1b[31m\x1b[1m✗\x1b[0m')
     time.sleep(0.5)
+
     if reg_variable == "female":
         print("Ты регистрируешь " + RESET + RED + BOLD + "Женские" + RESET + " Аккаунты")
     else:

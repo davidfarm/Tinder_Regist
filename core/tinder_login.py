@@ -104,7 +104,7 @@ def photos_fold(driver, photos_dir, photos_folder):
             break
     photos_path = get_photos_path(photos_dir+"\\"+base_fold[0], true_photo_fold)
     time.sleep(1)
-    ret = False
+    ret = True
     for ph_id in photos_path:
         ph_id1 = os.path.abspath(ph_id)
         timer(driver.find_element, By.XPATH, "//input[@type='file']").send_keys(ph_id1)
@@ -113,20 +113,15 @@ def photos_fold(driver, photos_dir, photos_folder):
                 try:
                     timer(handle_error_click, driver,
                           "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/button[2]/div[2]/div[2]", 105)
-
                     break
                 except:
                     ret = False
             else:
                 try:
                     timer(driver.find_element, By.CSS_SELECTOR,
-                          "button[class='c1p6lbu0'] div[class='l17p5q9z']").click()
-                    ret = True
-                    break
+                          "button[class='c1p6lbu0'] div[class='l17p5q9z']").click()  #new interface
                 except:
-                    ret = True
-
-
+                    break
 
 
 """Java распаковка"""
@@ -182,9 +177,14 @@ def model_profile_2(driver):
     time.sleep(1)
     try:
         handle_error_click( driver, "//div[contains(text(),'Continue')]", 105)
+        try:
+            driver.find_element( By.CSS_SELECTOR, "button[type='submit'] div[class='l17p5q9z']").click()
+        except:
+            driver.find_element(By.XPATH, "//span[normalize-space()='Continue']").click()
     except:
-        driver.find_element( By.CSS_SELECTOR, "button[type='submit'] div[class='l17p5q9z']").click()
-    continue_btn.click()
+        pass
+    driver.find_element(By.XPATH, "//span[normalize-space()='Continue']").click()
+
 
 def end_registr(driver):
     try:

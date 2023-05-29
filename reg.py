@@ -24,9 +24,10 @@ def reg():
     count_email = check()
     for i in range(count_email):
         try:
-            email, password, reserve, driver, photos_folder, session_name, group_ids, profile_id = start_session(port, city, group_id)
-            name_id = scan_name_id(session_name)
-            print(PURPLE + BOLD + f"\nID Создаваемой сессии: {name_id} ; Осталось зарегистрировать: {count_email - 1}\n" + RESET)
+            email, password, reserve, driver, photos_folder, session_name, group_ids, \
+                profile_id, name_id = start_session(port, city, group_id)
+            check_gmail = check_gmail()
+            print(PURPLE + BOLD + f"\nID Создаваемой сессии: {name_id} ; Осталось зарегистрировать: {check_gmail - 1}\n" + RESET)
             google_auth(driver, email, password, reserve)
             login_in_tinder(driver)
             sms_registration(driver)
