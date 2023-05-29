@@ -5,6 +5,7 @@ from core.google_auto import *
 from core.tinder_login import *
 
 
+
 config = configparser.ConfigParser()
 
 config.read('config.ini')
@@ -26,8 +27,8 @@ def reg():
         try:
             email, password, reserve, driver, photos_folder, session_name, group_ids, \
                 profile_id, name_id = start_session(port, city, group_id)
-            check_gmail = check_gmail()
-            print(PURPLE + BOLD + f"\nID Создаваемой сессии: {name_id} ; Осталось зарегистрировать: {check_gmail - 1}\n" + RESET)
+            gmail_check = check_gmail()
+            print(PURPLE + BOLD + f"\nID Создаваемой сессии: {name_id} ; Осталось зарегистрировать: {gmail_check - 1}\n" + RESET)
             google_auth(driver, email, password, reserve)
             login_in_tinder(driver)
             sms_registration(driver)

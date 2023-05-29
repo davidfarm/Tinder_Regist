@@ -13,11 +13,11 @@ url = 'http://checker.soax.com/api/ipinfo'
 def stick(name_id):
     proxy_url = "@proxy.soax.com:5000"
     if proxy_region == "none":
-        proxy_path_url = f'package-{package_id}-country-{proxy_country}-sessionid-{name_id}-sessionlength-1600'
+        proxy_path_url = f'package-{package_id}-country-{proxy_country}-sessionid-{name_id}-sessionlength-180'
     elif proxy_region == "":
-        proxy_path_url = f'package-{package_id}-country-{proxy_country}-sessionid-{name_id}-sessionlength-1600'
+        proxy_path_url = f'package-{package_id}-country-{proxy_country}-sessionid-{name_id}-sessionlength-180'
     else:
-        proxy_path_url = f'package-{package_id}-country-{proxy_country}-region-{proxy_region}-sessionid-{name_id}-sessionlength-1600'
+        proxy_path_url = f'package-{package_id}-country-{proxy_country}-region-{proxy_region}-sessionid-{name_id}-sessionlength-180'
     full_url = f"http://{proxy_path_url}:{package_login}{proxy_url}"
     requests.get(url, proxies={'http': full_url, 'https': full_url})
 
