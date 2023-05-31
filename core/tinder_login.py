@@ -72,14 +72,17 @@ def login_in_tinder(driver):
     except:
         pass
     timer(driver.find_element, By.CSS_SELECTOR, "a[class='c1p6lbu0 Miw(120px)'] div[class='l17p5q9z']").click()
-    time.sleep(10)
-    driver.switch_to.frame(driver.find_element(By.TAG_NAME, "iframe"))
+    time.sleep(2)
     try:
-        timer(handle_error_click, driver, "//span[@class='nsm7Bb-HzV7m-LgbsSe-BPrWId']", 105)
+        timer(driver.switch_to.frame, driver.find_element(By.TAG_NAME, "iframe"))
     except:
+        time.sleep(5)
+        timer(driver.switch_to.frame, driver.find_element(By.TAG_NAME, "iframe"))
+    try:
         timer(handle_error_click, driver, "/html[1]/body[1]", 105)
-    time.sleep(5)
-    driver.switch_to.window(driver.window_handles[1])
+    except:
+        timer(handle_error_click, driver, "//span[@class='nsm7Bb-HzV7m-LgbsSe-BPrWId']", 105)
+    timer(driver.switch_to.window, driver.window_handles[1])
     try:
         timer(handle_error_click, driver, "//div[contains(@class,'fFW7wc-ibnC6b-sM5MNb TAKBxb')]//div[@class='fFW7wc-ibnC6b']", 105)
     except:
@@ -93,6 +96,7 @@ def login_in_tinder(driver):
     except:
         traceback.print_exc()
         pass
+
 @error_handler("photos_fold")
 def photos_fold(driver, photos_dir, photos_folder):
     time.sleep(1)
@@ -111,15 +115,16 @@ def photos_fold(driver, photos_dir, photos_folder):
         while True:
             if ret:
                 try:
-                    timer(handle_error_click, driver,
-                          "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/button[2]/div[2]/div[2]", 105)
+                    timer(driver.find_element, By.CSS_SELECTOR,
+                          "button[class='c1p6lbu0'] div[class='l17p5q9z']").click()  #new interface
                     break
                 except:
                     ret = False
             else:
                 try:
-                    timer(driver.find_element, By.CSS_SELECTOR,
-                          "button[class='c1p6lbu0'] div[class='l17p5q9z']").click()  #new interface
+                    timer(handle_error_click, driver,
+                          "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/button[2]/div[2]/div[2]", 105)
+                    break
                 except:
                     break
 

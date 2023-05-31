@@ -48,6 +48,17 @@ def timer(t_func, *args, **kwargs):
 
     return result
 
+def timer2(t_func, *args, **kwargs):
+    for i in range(30):
+        time.sleep(0.5)
+        try:
+            result = t_func(*args, **kwargs)
+            break
+        except Exception as e:
+#            print(i)   #debug
+            pass
+
+    return result
 
 
 def handle_error_send_keys(driver, xpath, key, error_code):

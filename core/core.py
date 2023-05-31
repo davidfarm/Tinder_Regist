@@ -23,6 +23,7 @@ def new_session(session_name, proxy_host, proxy_port, proxy_type, proxy_username
     update_profile_group(profile_id=str(profile_id), port=port, group_id=group_ids)
     return driver, profile_id
 
+
 def start_session(port, city, group_id):
     """Starting session"""
     global group_ids
