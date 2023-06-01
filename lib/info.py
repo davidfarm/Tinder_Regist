@@ -128,6 +128,7 @@ def update_profile_group(profile_id, port, group_id):
 def update_profile_geo(profile_id, latitude, longitude, port):
     """update profile geo"""
     url = f'http://localhost:{port}/api/v2/profile/' + profile_id
+    extention_path = "data/capmonster.crx"
     header = {
         "accept": "application/json",
         "Content-Type": "application/json"
@@ -143,8 +144,14 @@ def update_profile_geo(profile_id, latitude, longitude, port):
         "mediaDevices": {
             "mode": "REAL"
         },
+        "storage": {
+            "extensions": True
+        }
     }
-    r = requests.post(url, json.dumps(data), headers=header)
+    files = {
+        "file": open(extention_path, "rb")
+    }
+    r = requests.post(url, json=data, headers=header, files=files)
     print(r.status_code)
 
 def create_profile(session_name, port):

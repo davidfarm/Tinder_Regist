@@ -38,7 +38,7 @@ def sms_registration(driver):
                 flg1 = True
                 pass
         while flg1:
-            send = input(f"Код не пришел. Ожидание кода {i}с. Для продолжения ожидания введите y")
+            send = input(f"Код не пришел. Ожидание кода {i}с. Для продолжения ожидания введите y: ")
             if send == "y":
                 flg = False
                 break
