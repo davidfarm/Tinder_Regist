@@ -194,6 +194,16 @@ def group_id_list(group_id, port):
         case ("FA006", "35000"):
             g_id = "2da42aed-49f7-4125-b572-a5c67fb41a97"
 
+        case ("FA007", "34999"):
+            g_id = "19663c6d-bdd2-4437-a28d-426f524b9084"
+        case ("FA007", "34999"):
+            g_id = "5f82e9d6-3c0d-433d-90f4-68168f003cb6"
+
+        case ("FA008", "34999"):
+            g_id = "109058f5-4bee-4351-a6bc-dac0be5db846"
+        case ("FA008", "35000"):
+            g_id = "43b12eec-791f-4c90-86ae-0deaf02d87bd"
+
 
         case (_, "35000"):
             g_id = "00000000-0000-0000-0000-000000000000"

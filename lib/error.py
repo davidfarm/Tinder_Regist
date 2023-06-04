@@ -1,5 +1,5 @@
 import time
-
+from lib.text import info
 from selenium.webdriver.common.by import By
 import traceback, inspect
 from core.check import *
@@ -77,17 +77,17 @@ def error_handler(func_name):
                     return func(*args, **kwargs)
                 except Exception as e:
                     if func_name == "google_auth":
-                        print(BOLD + YELLOW + "Ошибка Google авторизации" + RESET)
+                        print(BOLD + YELLOW + "Ошибка Google авторизации (info - для подробностей)" + RESET)
                     elif func_name == "login_in_tinder":
-                        print(BOLD + YELLOW + "Ошибка при входе в тиндер" + RESET)
+                        print(BOLD + YELLOW + "Ошибка при входе в тиндер (info - для подробностей)" + RESET)
                     elif func_name == "sms_registration":
-                        print(BOLD + YELLOW + "Ошибка СМС регистрации" + RESET)
+                        print(BOLD + YELLOW + "Ошибка СМС регистрации (info - для подробностей)" + RESET)
                     elif func_name == "model_profile":
-                        print(BOLD + YELLOW + "Ошибка первого блока регистрации ()" + RESET)
+                        print(BOLD + YELLOW + "Ошибка первого блока регистрации (info - для подробностей)" + RESET)
                     elif func_name == "photos_fold":
-                        print(BOLD + YELLOW + "Ошибка второго блока регистрации (ФОТО)" + RESET)
+                        print(BOLD + YELLOW + "Ошибка второго блока регистрации (info - для подробностей)" + RESET)
                     elif func_name == "model_profile_2":
-                        print(BOLD + YELLOW +"Ошибка третьего блока регистрации ()" + RESET)
+                        print(BOLD + YELLOW +"Ошибка третьего блока регистрации (info - для подробностей))" + RESET)
                     elif func_name == "end_registr":
                         print(BOLD + YELLOW +"Ошибка завершения регистрации" + RESET)
                     else:
@@ -106,6 +106,8 @@ def error_handler(func_name):
                         continue
                     elif continue_var == "ку":
                         print(BOLD + RED + "КУ-КУ Блядь." + RESET)
+                    elif continue_var == "info":
+                        info()
                     else:
                         print(LIGRED + "Неверный ввод, попробуйте снова." + RESET)
         return wrapper
@@ -114,7 +116,7 @@ def error_handler(func_name):
 def input_dialog(func, text):
     while True:
         user_input = input(text)
-        if user_input in ["re", "skip", "next", "10", "ку"]:
+        if user_input in ["re", "skip", "next", "10", "ку", "info"]:
             return user_input
         else:
             print("Неверный ввод, попробуйте снова.")

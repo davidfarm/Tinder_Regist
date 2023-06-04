@@ -12,13 +12,14 @@ package_login = 'rUfgRb6QMNgjiLYv'
 
 url = 'http://checker.soax.com/api/ipinfo'
 
-ips_id = ['at', 'au', 'be', 'br', 'ca', 'cn', 'cz', 'fi', 'fr', 'de', 'it', 'jp',
-          'nl', 'pl', 'pt', 'ro', 'es', 'se', 'tr', 'ua', 'gb', 'us'] # 22
+ips_id = ['at', 'au', 'be', 'br', 'ca', 'cz', 'fi', 'fr', 'de', 'it', 'jp',
+          'nl', 'pl', 'pt', 'ro', 'es', 'se', 'tr', 'ua', 'gb', 'us'] # 21
+
 
 def stick(name_id):
     proxy_url = "@proxy.soax.com:5000"
     if proxy_country == "none":
-        rand_ips = ips_id[random.randint(0,21)]
+        rand_ips = ips_id[random.randint(0,20)]
         proxy_path_url = f'package-{package_id}-country-{rand_ips}-sessionid-{name_id}-sessionlength-160'
     elif proxy_city == "none" or proxy_city == "":
         proxy_path_url = f'package-{package_id}-country-{proxy_country}-sessionid-{name_id}-sessionlength-160'
@@ -28,6 +29,7 @@ def stick(name_id):
     requests.get(url, proxies={'http': full_url, 'https': full_url})
 
     return proxy_path_url
+
 
 def proxy(proxy_path_url):
     proxy_host = "proxy.soax.com"

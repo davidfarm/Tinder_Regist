@@ -4,8 +4,6 @@ from core.core import *
 from core.google_auto import *
 from core.tinder_login import *
 
-
-
 config = configparser.ConfigParser()
 
 config.read('config.ini')
@@ -49,3 +47,4 @@ if password == 'GwLbQhUY':
     reg()
 else:
     print("Ты лох, пароль не верный.")
+    time.sleep(4)

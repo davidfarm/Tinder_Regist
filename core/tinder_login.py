@@ -188,7 +188,11 @@ def model_profile_2(driver):
             driver.find_element(By.XPATH, "//span[normalize-space()='Continue']").click()
     except:
         pass
-    driver.find_element(By.XPATH, "//span[normalize-space()='Continue']").click()
+    try:
+        time.sleep(2)
+        driver.find_element(By.XPATH, "//span[normalize-space()='Continue']").click()
+    except:
+        pass
 
 
 def end_registr(driver):

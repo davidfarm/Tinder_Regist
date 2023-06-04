@@ -144,14 +144,8 @@ def update_profile_geo(profile_id, latitude, longitude, port):
         "mediaDevices": {
             "mode": "REAL"
         },
-        "storage": {
-            "extensions": True
-        }
     }
-    files = {
-        "file": open(extention_path, "rb")
-    }
-    r = requests.post(url, json=data, headers=header, files=files)
+    r = requests.post(url, json=data, headers=header)
     print(r.status_code)
 
 def create_profile(session_name, port):
@@ -241,11 +235,12 @@ def color():
     BLUE = "\033[34m"
     BOLD = "\033[1m"
     RESET = "\033[0m"
-    YELLOW = "\033[33m"
+    YELLOW = "\033[93m"
     PURPLE = "\033[95m"
     LIGRED = "\033[91m"
     DARK_YELLOW = "\033[33m"
-    return RED, BOLD, BLUE, RESET, YELLOW, PURPLE, LIGRED, DARK_YELLOW
+    CIAN = "\033[96m"
+    return RED, BOLD, BLUE, RESET, YELLOW, PURPLE, LIGRED, DARK_YELLOW, CIAN
 
 def check_gmail():
     workbook = openpyxl.load_workbook('res/gmail.xlsx')
