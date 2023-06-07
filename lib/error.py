@@ -77,23 +77,23 @@ def error_handler(func_name):
                     return func(*args, **kwargs)
                 except Exception as e:
                     if func_name == "google_auth":
-                        print(BOLD + YELLOW + "Ошибка Google авторизации (info - для подробностей)" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошибка Google авторизации (info - для подробностей)" + RESET)
                     elif func_name == "login_in_tinder":
-                        print(BOLD + YELLOW + "Ошибка при входе в тиндер (info - для подробностей)" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошибка при входе в тиндер (info - для подробностей)" + RESET)
                     elif func_name == "sms_registration":
-                        print(BOLD + YELLOW + "Ошибка СМС регистрации (info - для подробностей)" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошибка СМС регистрации (info - для подробностей)" + RESET)
                     elif func_name == "model_profile":
-                        print(BOLD + YELLOW + "Ошибка первого блока регистрации (info - для подробностей)" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.1 (info - для подробностей)" + RESET)
                     elif func_name == "photos_fold":
-                        print(BOLD + YELLOW + "Ошибка второго блока регистрации (info - для подробностей)" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.2 (info - для подробностей)" + RESET)
                     elif func_name == "model_profile_2":
-                        print(BOLD + YELLOW +"Ошибка третьего блока регистрации (info - для подробностей))" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.3 (info - для подробностей))" + RESET)
                     elif func_name == "end_registr":
-                        print(BOLD + YELLOW +"Ошибка завершения регистрации" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.4" + RESET)
                     else:
                         print("404 Error")
 
-                    continue_var = input_dialog(func,YELLOW + f"Для продолжения регистрации введите команду: " + RESET)
+                    continue_var = input_dialog(func, YELLOW + f"Для продолжения регистрации введите команду: " + RESET)
                     if continue_var == "re":
                         continue
                     elif continue_var == "skip":

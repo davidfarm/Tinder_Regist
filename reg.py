@@ -1,8 +1,7 @@
-from core.check import *
-from core.sms_code import *
-from core.core import *
-from core.google_auto import *
+from core.core import start_session, sms_registration, rename
+from core.google_auto import google_auth
 from core.tinder_login import *
+from lib.security import security
 
 config = configparser.ConfigParser()
 
@@ -12,14 +11,13 @@ city = config.get('Settings', 'geo')
 port = config.get('Settings', 'port')
 group_id = config.get('Settings', 'group_id')
 reg_variable = config.get('Settings', 'reg_variable')
-PASSWORD = 'PASS'
 
-if PASSWORD in os.environ:
-    password = os.environ[PASSWORD]
-else:
-    password = input("Введите пароль: ")
+
+version = "0.5.3"
+
 
 def reg():
+    security()
     count_email = check()
     for i in range(count_email):
         try:
@@ -43,8 +41,5 @@ def reg():
         finally:
             driver.quit()
 
-if password == 'GwLbQhUY':
-    reg()
-else:
-    print("Ты лох, пароль не верный.")
-    time.sleep(4)
+
+reg()

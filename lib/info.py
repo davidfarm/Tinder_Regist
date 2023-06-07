@@ -128,7 +128,7 @@ def update_profile_group(profile_id, port, group_id):
 def update_profile_geo(profile_id, latitude, longitude, port):
     """update profile geo"""
     url = f'http://localhost:{port}/api/v2/profile/' + profile_id
-    extention_path = "data/capmonster.crx"
+
     header = {
         "accept": "application/json",
         "Content-Type": "application/json"

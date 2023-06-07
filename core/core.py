@@ -1,6 +1,5 @@
 from core.check import *
 from core.sms_code import *
-from core.core import *
 from core.google_auto import *
 from core.tinder_login import *
 from lib.geo_randomizer_polygon import get_points, group_id_list
@@ -39,7 +38,7 @@ def start_session(port, city, group_id):
     proxy_host = "proxy.soax.com"
     proxy_type = "SOCKS"
     proxy_username = proxy_path_url
-    proxy_password = "rUfgRb6QMNgjiLYv"
+    proxy_password = "o9wWEwXm7NH5RG2W"
     proxy_port = "5000"
 
     driver, profile_id = new_session(session_name, proxy_host, proxy_port, proxy_type, proxy_username, proxy_password, latitude,

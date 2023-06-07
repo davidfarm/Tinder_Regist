@@ -17,22 +17,22 @@ def get_sms(var1, var2, var3, country1, country2, country3, contry_code1, contry
         country = var1
         return country, phone_number, id
     except:
-        number = sa.getNumberV2(service="oi", country=country2)
-        var = contry_code2
+        number = sa.getNumberV2(service="oi", country=country1)
+        var = contry_code1
         try:
             phone_number = number["phoneNumber"]
             id = number["activationId"]
             phone_number = phone_number[var:]
-            country = var2
+            country = var1
             return country, phone_number, id
         except:
-            number = sa.getNumberV2(service="oi", country=country3)
-            var = contry_code3
+            number = sa.getNumberV2(service="oi", country=country1)
+            var = contry_code1
             try:
                 phone_number = number["phoneNumber"]
                 id = number["activationId"]
                 phone_number = phone_number[var:]
-                country = var3
+                country = var1
                 return country, phone_number, id
             except:
                 get_sms(var1, var2, var3, country1, country2, country3, contry_code1, contry_code2, contry_code3)

@@ -1,6 +1,6 @@
 import time, openpyxl, configparser
 from lib.info import *
-
+version = "0.5.3"
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -11,6 +11,8 @@ port = config.get('Settings', 'port')
 RED, BOLD, BLUE, RESET, YELLOW, PURPLE, LIGRED, DARK_YELLOW, CIAN = color()
 
 def check():
+    print(BOLD + RED + f"Версия программы: {version}" + RESET)
+
     print(YELLOW + BOLD + "Проверка состояния...\n" + RESET)
     time.sleep(0.5)
 
