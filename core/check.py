@@ -8,7 +8,6 @@ reg_variable = config.get('Settings', 'reg_variable')
 photos_dir = config.get('Settings', 'photos_dir')
 port = config.get('Settings', 'port')
 
-RED, BOLD, BLUE, RESET, YELLOW, PURPLE, LIGRED, DARK_YELLOW, CIAN = color()
 
 def check():
     print(BOLD + RED + f"Версия программы: {version}" + RESET)

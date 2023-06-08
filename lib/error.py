@@ -27,11 +27,16 @@ def handle_error_click_lock(driver, xpath, error_code):
             print(error.handle_error(error_code))
             retry = False
 
-def handle_error_click(driver, xpath, error_code):
+def clicker(driver, xpath):
     element = driver.find_element(By.XPATH, xpath)
     element.click()
 
-def error_find_element(driver, xpath,error_code):
+def sender(driver, xpath, key):
+    element = driver.find_element(By.XPATH, xpath)
+    element.clear()
+    element.send_keys(key)
+
+def finder(driver, xpath):
     element = driver.find_element(By.XPATH, xpath)
 
 """time.sleep итератор, чтоб не ждать фиксировано 5 сек, а итерировать при ошибке 5 раз за каждую сек"""
@@ -59,13 +64,6 @@ def timer2(t_func, *args, **kwargs):
             pass
 
     return result
-
-
-def handle_error_send_keys(driver, xpath, key, error_code):
-    element = driver.find_element(By.XPATH, xpath)
-    element.clear()
-    element.send_keys(key)
-
 
 
 

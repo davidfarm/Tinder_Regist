@@ -41,5 +41,5 @@ def reg():
         finally:
             driver.quit()
 
-
 reg()
+

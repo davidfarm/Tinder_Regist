@@ -68,7 +68,7 @@ def login_in_tinder(driver):
     time.sleep(1)
     driver.get("https://tinder.com")
     try:
-        timer(handle_error_click, driver, "//div[@class='D(f)--ml']//div[1]//button[1]//div[2]//div[2]", 105)
+        timer(clicker, driver, "//div[@class='D(f)--ml']//div[1]//button[1]//div[2]//div[2]")
     except:
         pass
     timer(driver.find_element, By.CSS_SELECTOR, "a[class='c1p6lbu0 Miw(120px)'] div[class='l17p5q9z']").click()
@@ -79,16 +79,16 @@ def login_in_tinder(driver):
         time.sleep(5)
         timer(driver.switch_to.frame, driver.find_element(By.TAG_NAME, "iframe"))
     try:
-        timer(handle_error_click, driver, "/html[1]/body[1]", 105)
+        timer(clicker, driver, "/html[1]/body[1]")
     except:
-        timer(handle_error_click, driver, "//span[@class='nsm7Bb-HzV7m-LgbsSe-BPrWId']", 105)
+        timer(clicker, driver, "//span[@class='nsm7Bb-HzV7m-LgbsSe-BPrWId']")
     timer(driver.switch_to.window, driver.window_handles[1])
     try:
-        timer(handle_error_click, driver, "//div[contains(@class,'fFW7wc-ibnC6b-sM5MNb TAKBxb')]//div[@class='fFW7wc-ibnC6b']", 105)
+        timer(clicker, driver, "//div[contains(@class,'fFW7wc-ibnC6b-sM5MNb TAKBxb')]//div[@class='fFW7wc-ibnC6b']")
     except:
-        timer(handle_error_click, driver, "//div[contains(@class,'fFW7wc-ibnC6b-sM5MNb TAKBxb')]//div[@class='fFW7wc-ibnC6b']", 105)
+        timer(clicker, driver, "//div[contains(@class,'fFW7wc-ibnC6b-sM5MNb TAKBxb')]//div[@class='fFW7wc-ibnC6b']")
     try:
-        timer(handle_error_click, driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[3]/div[1]", 105)
+        timer(clicker, driver, "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[3]/div[1]")
     except:
         pass
     try:
@@ -122,8 +122,8 @@ def photos_fold(driver, photos_dir, photos_folder):
                     ret = False
             else:
                 try:
-                    timer(handle_error_click, driver,
-                          "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/button[2]/div[2]/div[2]", 105)
+                    timer(clicker, driver,
+                          "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/button[2]/div[2]/div[2]")
                     break
                 except:
                     break
@@ -137,7 +137,7 @@ def photos_fold(driver, photos_dir, photos_folder):
 def model_profile(driver):
     """Creation of Tinder profile"""
     try:
-        timer(handle_error_click, driver, "//div[contains(text(),'I agree')]", 105)
+        timer(clicker, driver, "//div[contains(text(),'I agree')]")
     except:
         pass
     time.sleep(1)
@@ -151,19 +151,19 @@ def model_profile(driver):
         female_name = russian_female_names_en[random.randint(0, 99)]
         male_name = russian_male_names_en[random.randint(0, 49)]
     time.sleep(1)
-    timer(handle_error_send_keys, driver, "//input[@placeholder='MM']", random.randint(1, 12), 110)
-    timer(handle_error_send_keys, driver, "//input[@placeholder='DD']", random.randint(1, 28), 110)
+    timer(sender, driver, "//input[@placeholder='MM']", random.randint(1, 12))
+    timer(sender, driver, "//input[@placeholder='DD']", random.randint(1, 28))
 
     if reg_variable == 'female':
-        timer(handle_error_send_keys, driver, "//input[@id='name']", female_name, 110)
-        timer(handle_error_send_keys, driver, "//input[@placeholder='YYYY']", random.randint(1998, 2003), 110)
-        timer(handle_error_click, driver, "//span[normalize-space()='Woman']", 105)
-        timer(handle_error_click, driver, "//span[normalize-space()='Men']", 105)
+        timer(sender, driver, "//input[@id='name']", female_name)
+        timer(sender, driver, "//input[@placeholder='YYYY']", random.randint(1998, 2003))
+        timer(clicker, driver, "//span[normalize-space()='Woman']")
+        timer(clicker, driver, "//span[normalize-space()='Men']")
     else:
-        timer(handle_error_send_keys, driver, "//input[@id='name']", male_name, 110)
-        timer(handle_error_send_keys, driver, "//input[@placeholder='YYYY']", random.randint(1990, 1998), 110)
-        timer(handle_error_click, driver, "//span[normalize-space()='Man']", 105)
-        timer(handle_error_click, driver, "//span[normalize-space()='Women']", 105)
+        timer(sender, driver, "//input[@id='name']", male_name)
+        timer(sender, driver, "//input[@placeholder='YYYY']", random.randint(1990, 1998))
+        timer(clicker, driver, "//span[normalize-space()='Man']")
+        timer(clicker, driver, "//span[normalize-space()='Women']")
     time.sleep(1)
 
 @error_handler("model_profile_2")
@@ -175,13 +175,13 @@ def model_profile_2(driver):
     continue_btn.location_once_scrolled_into_view
     time.sleep(1)
     try:
-        handle_error_click(driver, "(//div[@class='l17p5q9z'])[8]", 105)
+        clicker(driver, "(//div[@class='l17p5q9z'])[8]")
     except:
-        handle_error_click(driver, "//div[@class='D(f) Fxd(r) Ac(sb) W(100%)']//div[3]//div[1]", 105)
-    timer(handle_error_click, driver, "(//button[@role='option'])[3]", 105)
+        clicker(driver, "//div[@class='D(f) Fxd(r) Ac(sb) W(100%)']//div[3]//div[1]")
+    timer(clicker, driver, "(//button[@role='option'])[3]")
     time.sleep(1)
     try:
-        handle_error_click( driver, "//div[contains(text(),'Continue')]", 105)
+        clicker( driver, "//div[contains(text(),'Continue')]")
         try:
             driver.find_element( By.CSS_SELECTOR, "button[type='submit'] div[class='l17p5q9z']").click()
         except:
@@ -197,9 +197,9 @@ def model_profile_2(driver):
 
 def end_registr(driver):
     try:
-        timer(handle_error_click, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[3]/button[1]/div[2]/div[2]", 105)
+        timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[3]/button[1]/div[2]/div[2]")
         time.sleep(1)
-        timer(handle_error_click, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[3]/button[1]/div[2]/div[2]", 105)
+        timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[3]/button[1]/div[2]/div[2]")
         time.sleep(1)
     except:
         pass

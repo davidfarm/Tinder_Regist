@@ -252,3 +252,7 @@ def check_gmail():
                 count_email += 1
 
     return count_email
+
+
+
+RED, BOLD, BLUE, RESET, YELLOW, PURPLE, LIGRED, DARK_YELLOW, CIAN = color()

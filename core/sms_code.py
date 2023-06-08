@@ -7,19 +7,19 @@ from lib.error import *
 def sms_registration(driver):
     base_flg = True
     while base_flg:
-        timer(handle_error_click, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]", 105)
+        timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
         country, phone_number, id = get_sms("United Kingdom", "Lithuania", "Sweden", 16, 44, 46, 2, 3, 1)
         try:
-            timer(handle_error_send_keys, driver, "//input[@placeholder='Search']", country, 110)
+            timer(sender, driver, "//input[@placeholder='Search']", country)
         except:
             time.sleep(2)
             driver.find_element(By.TAG_NAME, "input").send_keys(country)
             pass
-        timer(handle_error_click, driver, "//div[@role='button']", 105)
-        timer(handle_error_send_keys, driver, "//input[@name='phone_number']",phone_number, 110)
-        timer(handle_error_click, driver, "//div[contains(text(),'Continue')]", 105)
+        timer(clicker, driver, "//div[@role='button']")
+        timer(sender, driver, "//input[@name='phone_number']",phone_number)
+        timer(clicker, driver, "//div[contains(text(),'Continue')]")
         try:
-            timer(handle_error_click, driver, "//div[contains(text(),'Continue')]", 110)
+            timer(clicker, driver, "//div[contains(text(),'Continue')]")
         except:
             pass
 
@@ -32,8 +32,8 @@ def sms_registration(driver):
                 sms = get_code(id)
                 code = re.sub('\D', '', sms["status"].strip())
                 if code != "":
-                    timer(handle_error_send_keys, driver, "//input[@aria-label='OTP code digit 1']", code, 110)
-                    timer(handle_error_click, driver, "//div[contains(text(),'Continue')]", 105)
+                    timer(sender, driver, "//input[@aria-label='OTP code digit 1']", code)
+                    timer(clicker, driver, "//div[contains(text(),'Continue')]")
                     flg = True
                     flg1 = False
                     break
@@ -52,7 +52,7 @@ def sms_registration(driver):
                     break
                 elif send == "re":
                     flg = True
-                    handle_error_click(driver, "//button[normalize-space()='Update Contact Info']", 105)
+                    clicker(driver, "//button[normalize-space()='Update Contact Info']")
                     break
                 else:
                     print("Не верная команда, команды: y/n")

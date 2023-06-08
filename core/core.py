@@ -20,6 +20,7 @@ def new_session(session_name, proxy_host, proxy_port, proxy_type, proxy_username
     driver = create_driver(profile_id, port)
     time.sleep(1)
     update_profile_group(profile_id=str(profile_id), port=port, group_id=group_ids)
+
     return driver, profile_id
 
 
