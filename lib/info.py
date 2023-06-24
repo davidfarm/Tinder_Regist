@@ -2,31 +2,35 @@ import requests, re, string, json, gspread, os, natsort, openpyxl
 from selenium import webdriver
 import pandas as pd
 from oauth2client.service_account import ServiceAccountCredentials
+from core.logger import log_dispatcher
 
 
 def scan_photos_id(session_name):
     result = re.search(r"/(.+?)/", session_name)
     if result:
         photo_id = result.group(1)
-    return photo_id
+        return photo_id
+
 
 def scan_name_id(session_name):
     result = re.search(r"(.+?)/", session_name)
     if result:
         name_id = result.group(1)
-    return name_id
+        return name_id
 
-"""Не используется в Tinder REG"""
+
 def df_to_gsheets(df, spreadsheet_name, worksheet_name):
     """Sending df to google sheets"""
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-    credentials = ServiceAccountCredentials.from_json_keyfile_name('res/erudite-stratum-316309-a2d8c45cadb8.json', scope)
+    credentials = ServiceAccountCredentials.from_json_keyfile_name('res/erudite-stratum-316309-a2d8c45cadb8.json',
+                                                                   scope)
     gc = gspread.authorize(credentials)
     # Open the Google Sheet
     spreadsheet = gc.open(spreadsheet_name)
     worksheet = spreadsheet.worksheet(worksheet_name)
     # Write the DataFrame to the Google Sheet
     worksheet.update([df.columns.values.tolist()] + df.values.tolist())
+
 
 def parse_gmail(file):
     """Parse excel to get gmail account"""
@@ -39,7 +43,7 @@ def parse_gmail(file):
     parsed_df.to_excel(file, index=False)
     return email, password, reserve
 
-"""Не используется в Tinder REG"""
+
 def parse_proxy(file):
     df = pd.read_excel(file)
     row = df.iloc[0]
@@ -63,6 +67,7 @@ def send_cmd(driver, cmd, params={}):
     response = driver.command_executor._request('POST', url, body)
     return response.get('value')
 
+
 def parse_line(file):
     """Deprecated*, used to parse first line of text file"""
     with open(file, "r", encoding="UTF-8") as f:
@@ -76,6 +81,7 @@ def parse_line(file):
 
     return line
 
+
 def create_driver(session, port):
     """create driver"""
     mla_url = f'http://127.0.0.1:{port}/api/v1/profile/start?automation=true&profileId=' + session
@@ -88,7 +94,7 @@ def create_driver(session, port):
     driver = webdriver.Remote(command_executor=json['value'], options=options)
     return driver
 
-"""Не используется в Tinder REG"""
+
 def update_profile_proxy(profile_id, proxy_type, proxy_host, proxy_port, proxy_username, proxy_password, port):
     """update profile proxy"""
     url = f'http://localhost:{port}/api/v2/profile/' + profile_id
@@ -108,7 +114,7 @@ def update_profile_proxy(profile_id, proxy_type, proxy_host, proxy_port, proxy_u
         }
     }
     r = requests.post(url, json.dumps(data), headers=header)
-    print(r.status_code)
+    log_dispatcher.info(to_write=r.status_code)
 
 
 def update_profile_group(profile_id, port, group_id):
@@ -122,7 +128,7 @@ def update_profile_group(profile_id, port, group_id):
         "group": group_id,
     }
     r = requests.post(url, json.dumps(data), headers=header)
-    print(r.status_code)
+    log_dispatcher.info(to_write=r.status_code)
 
 
 def update_profile_geo(profile_id, latitude, longitude, port):
@@ -146,7 +152,8 @@ def update_profile_geo(profile_id, latitude, longitude, port):
         },
     }
     r = requests.post(url, json=data, headers=header)
-    print(r.status_code)
+    log_dispatcher.info(to_write=r.status_code)
+
 
 def create_profile(session_name, port):
     """create profile"""
@@ -166,6 +173,7 @@ def create_profile(session_name, port):
 
     return json.loads(req.content).get("uuid")
 
+
 def list_profiles(port):
     """list all profiles"""
     url = f"http://localhost:{port}/api/v2/profile"
@@ -184,8 +192,8 @@ def get_profile_name(session, port):
     session_name = session_name[0]
     pattern = r'[' + string.punctuation + ']'
     session_name = re.sub(pattern, "", session_name)
-    print(session_name)
     return session_name
+
 
 def update_profile(port, profile_id, session_rename, group_id):
     url = f'http://localhost:{port}/api/v2/profile/' + profile_id
@@ -198,14 +206,15 @@ def update_profile(port, profile_id, session_rename, group_id):
         "name": session_rename
     }
     reqs = requests.post(url, json.dumps(x), headers=header)
-    print(reqs.status_code)
+    log_dispatcher.info(to_write=reqs.status_code)
 
-def get_photos_path(photos_dir, photos_folder):
-    folder_path = os.path.join(photos_dir, photos_folder)
+
+def get_photos_path(photos_dir):
+    folder_path = photos_dir
 
     # Проверяем, существует ли папка
     if not os.path.exists(folder_path):
-        raise Exception(f"Folder '{photos_folder}' not found in '{photos_dir}'")
+        raise Exception(f"Folder not found ")
 
     # Получаем список файлов из нужной папки с расширением .jpg
     jpg_files = [os.path.join(folder_path, file) for file in os.listdir(folder_path) if file.endswith('.jpg')]
@@ -216,7 +225,22 @@ def get_photos_path(photos_dir, photos_folder):
 
     return jpg_files
 
+
 def fold_names(photos_dir, photos_folder):
+    log_dispatcher.info(to_write=f'Yor photos_dir:{photos_dir}\nYor photos_folder:{photos_folder}')
+    # validator = 'One' if photos_folder[1] == '-' else 'Two'
+    # log_dispatcher.info(to_write=f'validator: {validator}')
+
+    first_pattern = r'^[A-Za-z]-[A-Za-z]+$'
+    second_pattern = r'^[A-Za-z][0-9]+$'
+    subfolder = None
+
+    def filter_two_letter(item):
+        if 'MV-Instagram MAN' in item:
+            return False
+        else:
+            return True
+
     subfolders = []
     for item in os.listdir(photos_dir):
         item_path = os.path.join(photos_dir, item)
@@ -227,7 +251,33 @@ def fold_names(photos_dir, photos_folder):
             prefix += char
         if os.path.isdir(item_path) and item.startswith(prefix):
             subfolders.append(item)
-    return subfolders
+
+    # log_dispatcher.info(to_write=f'subfolders with out filters: {str(subfolders)}')
+
+    subfolders = [item for item in subfolders if filter_two_letter(item)]
+
+    if len(subfolders) == 1:
+        log_dispatcher.info(to_write=f'{subfolders[0]}- first subfolders')
+        return subfolders[0]
+    elif len(subfolders) == 2:
+        for i in subfolders:
+            log_dispatcher.info(to_write=f'from re.match i: {i}')
+            if re.match(first_pattern, i) and re.match(second_pattern, photos_folder):
+                log_dispatcher.info(to_write=f'len(subfolders == 2 and match, i = {i}')
+                return i
+
+    log_dispatcher.info(to_write='second subfolders search:')
+
+    for item in subfolders:
+        log_dispatcher.info(to_write=item)
+
+        if photos_folder == item.split()[0]:
+            subfolder = item
+            log_dispatcher.info(to_write=f'second subfolder is: {subfolder}')
+            break
+    print(f'subfolder: {subfolder}')
+    return subfolder
+
 
 def color():
     """ANSI Color"""
@@ -240,7 +290,9 @@ def color():
     LIGRED = "\033[91m"
     DARK_YELLOW = "\033[33m"
     CIAN = "\033[96m"
+
     return RED, BOLD, BLUE, RESET, YELLOW, PURPLE, LIGRED, DARK_YELLOW, CIAN
+
 
 def check_gmail():
     workbook = openpyxl.load_workbook('res/gmail.xlsx')
@@ -252,7 +304,6 @@ def check_gmail():
                 count_email += 1
 
     return count_email
-
 
 
 RED, BOLD, BLUE, RESET, YELLOW, PURPLE, LIGRED, DARK_YELLOW, CIAN = color()

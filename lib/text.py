@@ -1,5 +1,6 @@
-from core.check import *
-version = "0.5.3"
+from lib.info import *
+
+version = '0.5.6'
 
 version = PURPLE + "\nПоследнее обновление инфо. " + BOLD + f"{version}\n" + RESET + CIAN
 

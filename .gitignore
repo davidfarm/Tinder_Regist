@@ -10,3 +10,7 @@ dist_old/
 /*.rar
 *.exe
 *.rar
+CapMonsterLib/
+app/res/
+for_test/
+app/invalid sessions/

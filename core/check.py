@@ -1,31 +1,38 @@
-import time, openpyxl, configparser
-from lib.info import *
-version = "0.5.3"
+# from core import *
+from core.config import *
+from lib.info import check_gmail, RESET, RED, BOLD, BLUE
+from selenium.webdriver.common.by import By
 
-config = configparser.ConfigParser()
-config.read('config.ini')
-reg_variable = config.get('Settings', 'reg_variable')
-photos_dir = config.get('Settings', 'photos_dir')
-port = config.get('Settings', 'port')
+
+import os
+import time
+import requests
+
+version = '0.6.1'
+
 
 
 def check():
-    print(BOLD + RED + f"Версия программы: {version}" + RESET)
-
-    print(YELLOW + BOLD + "Проверка состояния...\n" + RESET)
+    log_dispatcher.info(to_print=f"Версия программы: {version}")
+    log_dispatcher.info(to_print=f"Проверка состояния...")
     time.sleep(0.5)
 
-    if os.path.exists(photos_dir):
-        print("Путь в норме \u2705")
+    if os.path.exists(config_data.get_photos_dir):
+        msg = 'Путь в норме'
+        log_dispatcher.info(to_print=msg, to_write=msg)
     else:
-        print("Путь не верный \x1b[31m\x1b[1m✗\x1b[0m")
+        msg = 'Путь не верный'
+        log_dispatcher.info(to_print=msg,
+                            to_write=f'EXCEPTION!!! File path is not correct!'
+                                     f'\nSet path: {config_data.get_photos_dir} \n\n\n')
 
     time.sleep(0.5)
     try:
         count_email = check_gmail()
-        print(f"Кол-во почт в программе: {count_email}")
-    except:
-        pass
+        msg = f'Кол-во почт в программе: {count_email}'
+        log_dispatcher.info(to_print=msg, to_write=msg)
+    except Exception as ex:
+        log_dispatcher.info(to_write=f'\n\n\n{ex}')
 
     time.sleep(0.5)
     try:
@@ -34,22 +41,29 @@ def check():
             with open(filename, 'r') as f:
                 content = f.read()
                 num_lines = content.count('\n')
-                print(f'Кол-во имен в session_names: {num_lines + 1}')
+                msg = f'Кол-во имен в session_names: {num_lines + 1}'
+                log_dispatcher.info(to_print=msg, to_write=msg)
         else:
-            print(f'Файл {filename} не найден.')
+            msg = f'Файл {filename} не найден.'
+            log_dispatcher.info(to_print=msg, to_write=msg)
+
+
+
     except:
         pass
     time.sleep(0.5)
 
-    url = f'http://127.0.0.1:{port}'
+    url = f'http://127.0.0.1:{config_data.get_port}'
     try:
         requests.get(url, timeout=1)
-        print(f'Подключение к порту {port} установлено \u2705')
+        msg = f'Подключение к порту {config_data.get_port} установлено'
+        log_dispatcher.info(to_print=msg, to_write=msg)
     except:
-        print(f'Подключение к порту {port} не удалось установить \x1b[31m\x1b[1m✗\x1b[0m')
+        msg = f'Подключение к порту {config_data.get_port} не удалось установить'
+        log_dispatcher.info(to_print=msg, to_write=msg)
     time.sleep(0.5)
 
-    if reg_variable == "female":
+    if config_data.get_reg_variable == "female":
         print("Ты регистрируешь " + RESET + RED + BOLD + "Женские" + RESET + " Аккаунты")
     else:
         print("Ты регистрируешь " + RESET + BLUE + BOLD + "Мужские" + RESET + " Аккаунты")
@@ -57,11 +71,20 @@ def check():
     val = input("Готов продолжить? Y/N\n")
     while val.lower() != 'y':
         if val.lower() == 'n':
-            print("Завершаю работу...")
+            log_dispatcher.info(to_print='Завершаю работу...')
             time.sleep(4)
             exit()
         val = input("Не пиши херню, вот варианты - Y/N: \n")
-    print("Ну что, процесс пошел? Скрещивай пальчики...\n")
+    msg = 'Ну что, процесс пошел? Скрещивай пальчики...\n'
+    log_dispatcher.info(to_print=msg, to_write='Start work')
 
     return count_email
 
+
+def baned(driver):
+    try:
+        res = driver.find_element(By.XPATH, "//h3[normalize-space()='You Have Been Banned From Tinder']")
+        if res:
+            return False
+    except:
+        return "baned", 1

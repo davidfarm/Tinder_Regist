@@ -5,8 +5,6 @@ sa = SMSActivateAPI(API_KEY)
 sa.debug_mode = False
 
 
-
-
 def get_sms(var1, var2, var3, country1, country2, country3, contry_code1, contry_code2, contry_code3):
     number = sa.getNumberV2(service="oi", country=country1)
     var = contry_code1

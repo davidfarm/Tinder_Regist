@@ -1,7 +1,5 @@
-import re, time
-from selenium.webdriver.common.by import By
-from lib.sms_activate import get_sms, get_code
-from lib.error import *
+from core import *
+
 
 @error_handler("sms_registration")
 def sms_registration(driver):
@@ -16,7 +14,7 @@ def sms_registration(driver):
             driver.find_element(By.TAG_NAME, "input").send_keys(country)
             pass
         timer(clicker, driver, "//div[@role='button']")
-        timer(sender, driver, "//input[@name='phone_number']",phone_number)
+        timer(sender, driver, "//input[@name='phone_number']", phone_number)
         timer(clicker, driver, "//div[contains(text(),'Continue')]")
         try:
             timer(clicker, driver, "//div[contains(text(),'Continue')]")
@@ -41,6 +39,7 @@ def sms_registration(driver):
                     flg1 = True
                     pass
             while flg1:
+                log_dispatcher.info(to_write='sms code not received')
                 send = input(YELLOW + f"Код не пришел. Ожидание кода {tot}с. Введите символ для продолжения: " + RESET)
                 if send == "y":
                     flg = False
@@ -55,7 +54,7 @@ def sms_registration(driver):
                     clicker(driver, "//button[normalize-space()='Update Contact Info']")
                     break
                 else:
-                    print("Не верная команда, команды: y/n")
+                    log_dispatcher.info(to_print='Не верная команда, команды: y/n')
             if flg:
                 base_flg = False
                 break
@@ -66,4 +65,3 @@ def sms_registration(driver):
         driver.find_element(By.XPATH, "//div[@class='CenterAlign Fxd(c) M(a)']")
     except:
         pass
-
