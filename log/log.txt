@@ -16,3 +16,12 @@ europa
 FA009
 True
 
+2023-06-25 13:00:24,557 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+

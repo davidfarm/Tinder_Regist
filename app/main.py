@@ -1,3 +1,4 @@
+import re
 import time
 import traceback
 
@@ -7,6 +8,8 @@ from core.google_auto import google_auth
 from core.logger import log_dispatcher, session_dp
 
 from lib.ban_dispatcher import ban_dp
+
+run = None
 
 
 class Registration:
@@ -30,11 +33,12 @@ class Registration:
         self.password = None
         self.email = None
         self.count_ban = 0
+        self.count_run_sms_reg = 0
 
         self.log_dispatcher = log_dispatcher
         self.session_dp = session_dp
         self.log_dispatcher.info(to_write='########################### NEW SESSION ###########################')
-        self.count_email = check()
+        self.count_email = check()  # тут пишется версия проги
         self.ban_dp = ban_dp
         self.PHOTOS_DIR = config_data.get_photos_dir
         self.CITY = config_data.get_city
@@ -77,8 +81,8 @@ class Registration:
 
     def run_sms_registration(self):
         log_dispatcher.info(to_write='run_sms_registration')
-        sms_registration(self.driver)
-        time.sleep(0.5)
+        res = sms_registration(self.driver)
+        log_dispatcher.info(to_write=f'result sms reg: {res}')
         ban_dp.set_status('Active')
 
     # def run_baned(self):
@@ -138,6 +142,7 @@ class Registration:
 class RunAll(Registration):
     def __init__(self, log_dispatcher, ban_dp, session_dp):
         super().__init__(log_dispatcher, ban_dp, session_dp)
+
         self.all_func = [
             'self.run_start_session',
             'self.run_google_auth',
@@ -151,6 +156,7 @@ class RunAll(Registration):
         pattern_skip = re.compile(r"skip", re.IGNORECASE)
         pattern_next = re.compile(r"next", re.IGNORECASE)
         pattern_re = re.compile(r"re", re.IGNORECASE)
+        pattern_ky = re.compile(r"ку", re.IGNORECASE)
         try:
             for _ in range(self.count_email):
                 log_dispatcher.info(to_write=f'len(all_func: {len(self.all_func)})')
@@ -173,49 +179,61 @@ class RunAll(Registration):
                 #     self.run_set_preference()
                 self.run_end_reg()
                 i = 0
-                time.sleep(5)
+                time.sleep(1)
                 log_dispatcher.info(to_print='Аккаунт зарегестрировано!', to_write='Account was created!\n\n\n')
                 rename(self.PORT, self.profile_id, self.session_name, self.group_ids)
                 log_dispatcher.info(to_print='закрываю сессию...')
                 time.sleep(2)
                 self.driver.quit()
 
-        except StopIteration:
-            command = input('Повтори команду...\n')
-            log_dispatcher.info(to_write=f'Input command in 180 line main.py: {command}')
-            if pattern_skip.search(command):
-                log_dispatcher.info(to_write='StopIteration, input skip, finalization session...')
-                self.finalization_invalid_session()
-                log_dispatcher.info(to_write='Finalization complete...')
-                self.__call__()
-
-            if pattern_next.search(command):
-                self.__call__(i=int(i + 1))
-
-            if pattern_re.search(command):
-                self.__call__(i=i)
-            else:
-                log_dispatcher.info(to_print='Вы ввели не корректную команду, закрываю сессию',
-                                    to_write='StopIteration, Uncorrect command, finalization session...')
-                self.finalization_invalid_session()
-                log_dispatcher.info(to_write='Finalization complete...')
-                return
-
-            time.sleep(2)
-            log_dispatcher.info(to_print='закрываю сессию...')
-            rename(self.PORT, self.profile_id, self.session_name, self.group_ids)
-            self.driver.quit()
+        # except StopIteration:
+        #     command = input('Повтори команду...\n')
+        #     log_dispatcher.info(to_write=f'Input command in 180 line main.py: {command}')
+        #     if pattern_skip.search(command):
+        #         log_dispatcher.info(to_write='StopIteration, input skip, finalization session...')
+        #         self.finalization_invalid_session()
+        #         log_dispatcher.info(to_write='Finalization complete...')
+        #         self.__call__()
+        #
+        #     if pattern_next.search(command):
+        #         self.__call__(i=int(i + 1))
+        #
+        #     if pattern_re.search(command):
+        #         self.__call__(i=i)
+        #     else:
+        #         log_dispatcher.info(to_print='Вы ввели не корректную команду, закрываю сессию',
+        #                             to_write='StopIteration, Uncorrect command, finalization session...')
+        #         self.finalization_invalid_session()
+        #         log_dispatcher.info(to_write='Finalization complete...')
+        #         return
+        #
+        #     time.sleep(1)
+        #     log_dispatcher.info(to_print='закрываю сессию...')
+        #     rename(self.PORT, self.profile_id, self.session_name, self.group_ids)
+        #     self.driver.quit()
 
         except Exception as ex:
             error_traceback = traceback.format_exc()
-            msg = f'Если ты считаешь, что программа отработала неправильно - отправь файл логов и скриншот консоли\n' \
+            msg = f'Коротко об ошибке: \n{ex}\n' \
+                  f'Функция: {self.all_func[i]}\n' \
+                  f'Если ты считаешь, что программа отработала неправильно - отправь файл логов и скриншот консоли\n' \
                   f'Так же можешь отправить файл логов после завершения работы скрипта, это будет полезно первое время\n' \
                   f' Обрати внимание, что ошибки типа "Плохая прокси и т.п." на даный момент' \
                   f' не фиксятся\n\n\n'
             log_dispatcher.info(to_print=msg, to_write=f'EXCEPTION!! {error_traceback}')
             time.sleep(0.5)
+
+            if self.all_func[i] == 'self.run_sms_registration':
+                if self.count_run_sms_reg < 1:
+                    self.count_run_sms_reg += 1
+                    self.__call__(i=int(i - 1))
+                    return
+                else:
+                    log_dispatcher.info(to_print='Не удалось в автоматическом режиме исправить ошибку регистрации',
+                                        to_write='Cant fix sms_reg error')
             command = input('Ожидаю команду...\n')
             log_dispatcher.info(to_write=f'Input command in 213 line main.py: {command}')
+
             if pattern_skip.search(command):
                 log_dispatcher.info(to_write='ex, input skip, finalization session...')
                 self.finalization_invalid_session()
@@ -228,6 +246,10 @@ class RunAll(Registration):
             if pattern_re.search(command):
                 self.__call__(i=i)
 
+            if pattern_ky.search(command):
+                log_dispatcher.info(to_print='Саламалейкум брат')
+                self.__call__(i=i)
+
             else:
                 log_dispatcher.info(to_print='Вы ввели не корректную команду, закрываю сессию',
                                     to_write='ex, Uncorrect command, finalization session...')
@@ -237,5 +259,12 @@ class RunAll(Registration):
 
 
 if __name__ == '__main__':
+    # try:
     run = RunAll(log_dispatcher, ban_dp, session_dp)
     run()
+    # except KeyboardInterrupt:
+    #     run.finalization_invalid_session()
+    # except Exception as ex:
+    #     error_traceback = traceback.format_exc()
+    #     log_dispatcher.info(to_write=f'finaly exception:\n'
+    #                                  f'{error_traceback}')

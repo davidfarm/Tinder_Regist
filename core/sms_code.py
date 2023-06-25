@@ -48,7 +48,9 @@ def sms_registration(driver):
                 elif send == "n":
                     flg = True
                     base_flg = False
-                    break
+                    log_dispatcher.info(to_print='Повторяю попытку смс-авторизации, ошибку ниже игнорируй...',
+                                        to_write='sms-code not received')
+                    raise ValueError
                 elif send == "re":
                     flg = True
                     clicker(driver, "//button[normalize-space()='Update Contact Info']")

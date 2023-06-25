@@ -221,7 +221,9 @@ def get_photos_path(photos_dir):
 
     # Если список пустой, значит не было найдено файлов
     if not jpg_files:
-        raise Exception(f"No JPG files found in folder '{folder_path}'")
+        # raise Exception(f"No JPG files found in folder '{folder_path}'")
+        log_dispatcher.info(to_print='Папка с фото пустая', to_write='photos folder is empty')
+        return None
 
     return jpg_files
 
@@ -269,7 +271,7 @@ def fold_names(photos_dir, photos_folder):
     log_dispatcher.info(to_write='second subfolders search:')
 
     for item in subfolders:
-        log_dispatcher.info(to_write=item)
+        # log_dispatcher.info(to_write=item)
 
         if photos_folder == item.split()[0]:
             subfolder = item

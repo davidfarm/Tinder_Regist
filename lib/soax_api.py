@@ -46,8 +46,8 @@ def stick(name_id):
 
             if check_proxy(full_url):
                 break
-
-            log_dispatcher.info(to_write='Ошибка создания проски -_-')
+            msg = 'Ошибка создания проски -_-'
+            log_dispatcher.info(to_print=msg, to_write=msg)
 
             if i == 3:
                 msg = 'Не удалось создать прокси'

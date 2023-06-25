@@ -97,70 +97,75 @@ def error_handler(func_name):
                         continue
                     if func_name == "google_auth":
                         log_dispatcher.info(to_write='Google authorization error\n' + error_traceback)
-                        print(BOLD + DARK_YELLOW + "Ошибка Google авторизации (info - для подробностей)" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошибка Google авторизации" + RESET)
                         flag = True
+                        raise GoogleAuthError
                     elif func_name == "login_in_tinder":
                         log_dispatcher.info(to_write='Tinder authorization error\n' + error_traceback)
                         print(BOLD + DARK_YELLOW + "Ошибка при входе в тиндер (info - для подробностей)" + RESET)
                         if not baned(ban_dp.get_driver):
                             log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned')
                             ban_dp.set_status('Ban')
-                            break
+                        raise TinderLoginError
                     elif func_name == "sms_registration":
                         if not baned(ban_dp.get_driver):
                             log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned')
                             ban_dp.set_status('Ban')
-                            break
-                        log_dispatcher.info(to_write='SMS registration error\n' + e)
-                        print(BOLD + DARK_YELLOW + "Ошибка СМС регистрации (info - для подробностей)" + RESET)
+                        log_dispatcher.info(to_write='SMS registration error\n' + str(e))
+                        print(BOLD + DARK_YELLOW + "Ошибка СМС регистрации" + RESET)
+                        raise SMSRegistrationError
                     elif func_name == "model_profile":
-                        log_dispatcher.info(to_write='Error in block 5.1\n' + e)
+                        log_dispatcher.info(to_write='Error in block 5.1\n' + str(e))
 
                         if not baned(ban_dp.get_driver):
                             log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned')
                             ban_dp.set_status('Ban')
-                            break
-                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.1 (info - для подробностей)" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.1" + RESET)
+                        break
                     elif func_name == "photos_fold":
                         if not baned(ban_dp.get_driver):
                             log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned')
                             ban_dp.set_status('Ban')
-                            break
+
                         log_dispatcher.info(to_write='Error in block 5.2\n' + error_traceback)
-                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.2 (info - для подробностей)" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.2" + RESET)
+                        break
                     elif func_name == "model_profile_2":
                         if not baned(ban_dp.get_driver):
                             log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned')
                             ban_dp.set_status('Ban')
-                            break
+
                         log_dispatcher.info(to_write='Error in block 5.3\n' + error_traceback)
-                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.3 (info - для подробностей))" + RESET)
+                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.3)" + RESET)
+                        break
                     elif func_name == "end_registr":
                         log_dispatcher.info(to_write='Error in block 5.4\n' + error_traceback)
                         print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.4" + RESET)
+                        break
                     else:
                         log_dispatcher.info(to_write='Unknown error\n' + error_traceback)
                         print("404 Error")
+                        break
 
-                    if flag:
-                        continue_var = input_dialog(func,
-                                                    YELLOW + f"Для продолжения регистрации введите команду: " + RESET)
-                        if continue_var == "re":
-                            continue
-                        elif continue_var == "skip":
-                            # return
-                            raise StopIteration
-                        elif continue_var == "next":
-                            break
-                        elif continue_var == "10":
-                            print("Всегда помни Десятое правило")
-                            continue
-                        elif continue_var == "ку":
-                            print(BOLD + RED + "КУ-КУ Блядь." + RESET)
-                        elif continue_var == "info":
-                            info()
-                        else:
-                            print(LIGRED + "Неверный ввод, попробуйте снова." + RESET)
+                    # if flag:
+                    #     continue_var = input_dialog(func,
+                    #                                 YELLOW + f"Для продолжения регистрации введите команду: " + RESET)
+                    #     if continue_var == "re":
+                    #         continue
+                    #     elif continue_var == "skip":
+                    #         # return
+                    #         raise StopIteration
+                    #     elif continue_var == "next":
+                    #         break
+                    #     elif continue_var == "10":
+                    #         print("Всегда помни Десятое правило")
+                    #         continue
+                    #     elif continue_var == "ку":
+                    #         print(BOLD + RED + "КУ-КУ Блядь." + RESET)
+                    #     elif continue_var == "info":
+                    #         info()
+                    #     else:
+                    #         print(LIGRED + "Неверный ввод, попробуйте снова." + RESET)
 
         return wrapper
 
@@ -175,3 +180,16 @@ def input_dialog(func, text):
             return user_input
         else:
             print("Неверный ввод, попробуйте снова.")
+
+
+class CustomException(Exception):
+    def __init__(self, message):
+        self.message = message
+
+    def __str__(self):
+        return f"Custom Exception: {self.message}"
+
+
+GoogleAuthError = CustomException('GoogleAuthError')
+TinderLoginError = CustomException('TinderLoginError')
+SMSRegistrationError = CustomException('SMSRegistrationError')
