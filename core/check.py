@@ -7,7 +7,7 @@ import os
 import time
 import requests
 
-version = '0.6.3.2'
+version = '0.6.4'
 
 
 def check():

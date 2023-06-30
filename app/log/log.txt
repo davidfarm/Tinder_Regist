@@ -8582,3 +8582,2029 @@ lib.error.CustomException: Custom Exception: SMSRegistrationError
 2023-06-30 11:34:10,354 - DEBUG - ex, exit, finalization session...
 2023-06-30 11:34:14,987 - DEBUG - 204
 2023-06-30 11:34:23,042 - DEBUG - Finalization complete...
+2023-06-30 17:01:59,980 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+europa
+FA009
+True
+
+2023-06-30 17:02:08,291 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-30 17:02:08,802 - DEBUG - Путь в норме
+2023-06-30 17:02:09,304 - DEBUG - Кол-во почт в программе: 2
+2023-06-30 17:02:09,813 - DEBUG - Кол-во имен в session_names: 2
+2023-06-30 17:05:21,698 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+europa
+FA009
+True
+
+2023-06-30 17:05:36,338 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+europa
+FA009
+True
+
+2023-06-30 17:05:45,819 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-30 17:05:46,331 - DEBUG - Путь в норме
+2023-06-30 17:05:46,844 - DEBUG - Кол-во почт в программе: 19
+2023-06-30 17:05:47,351 - DEBUG - Кол-во имен в session_names: 19
+2023-06-30 17:05:49,420 - DEBUG - Start work
+2023-06-30 17:05:59,134 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:05:59,664 - DEBUG - use config_browser
+2023-06-30 17:05:59,664 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:06:03,402 - DEBUG - proxy is valid
+2023-06-30 17:06:17,614 - DEBUG - 204
+2023-06-30 17:06:22,014 - DEBUG - 204
+2023-06-30 17:06:39,930 - DEBUG - 204
+2023-06-30 17:06:39,930 - DEBUG - 
+ID Создаваемой сессии: B10082 ; Осталось зарегистрировать: 19
+
+['apebrenda8@gmail.com', 'nke3xhor7zrnu4', 'v3henkin92ka@hotmail.com', 'VZ671', 'B10082/VZ671/R013/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 17:06:45,319 - DEBUG - run_google_auth
+2023-06-30 17:07:56,568 - DEBUG - run_login_tinder
+2023-06-30 17:09:01,015 - DEBUG - run_sms_registration
+2023-06-30 17:10:18,770 - DEBUG - sms code not received
+2023-06-30 17:10:22,164 - DEBUG - sms-code not received
+2023-06-30 17:10:22,179 - DEBUG - SMS registration error
+
+2023-06-30 17:10:42,811 - DEBUG - run_sms_registration
+2023-06-30 17:11:05,166 - DEBUG - result sms reg: None
+2023-06-30 17:20:54,797 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-30 17:20:55,307 - DEBUG - Путь в норме
+2023-06-30 17:20:55,808 - DEBUG - Кол-во почт в программе: 18
+2023-06-30 17:20:56,318 - DEBUG - Кол-во имен в session_names: 18
+2023-06-30 17:20:58,446 - DEBUG - Start work
+2023-06-30 17:21:04,220 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:21:04,756 - DEBUG - use config_browser
+2023-06-30 17:21:04,756 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:21:05,484 - DEBUG - proxy is valid
+2023-06-30 17:21:16,759 - DEBUG - 204
+2023-06-30 17:21:21,136 - DEBUG - 204
+2023-06-30 17:21:35,953 - DEBUG - 204
+2023-06-30 17:21:35,953 - DEBUG - 
+ID Создаваемой сессии: B10083 ; Осталось зарегистрировать: 18
+
+['berschauermelissa@gmail.com', 'w76h31e066tn', 'uhunetcobookdars2020k7@tryalert.com', 'VZ672', 'B10083/VZ672/R011/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 17:28:59,792 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+europa
+FA009
+True
+
+2023-06-30 17:29:09,957 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-30 17:29:10,470 - DEBUG - Путь в норме
+2023-06-30 17:29:10,980 - DEBUG - Кол-во почт в программе: 17
+2023-06-30 17:29:11,483 - DEBUG - Кол-во имен в session_names: 17
+2023-06-30 17:29:14,140 - DEBUG - Start work
+2023-06-30 17:29:19,364 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:29:19,893 - DEBUG - use config_browser
+2023-06-30 17:29:19,893 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:29:20,833 - DEBUG - proxy is valid
+2023-06-30 17:29:32,306 - DEBUG - 204
+2023-06-30 17:29:36,683 - DEBUG - 204
+2023-06-30 17:29:50,727 - DEBUG - 204
+2023-06-30 17:29:50,727 - DEBUG - 
+ID Создаваемой сессии: B10084 ; Осталось зарегистрировать: 17
+
+['darjaHill37218@gmail.com', 'knvqvh0vmkwvjl', '6mdalgameku913a@wow.com', 'VZ673', 'B10084/VZ673/R006/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 17:31:09,491 - DEBUG - run_google_auth
+2023-06-30 17:32:12,949 - DEBUG - run_login_tinder
+2023-06-30 17:32:44,873 - DEBUG - run_login_tinder
+2023-06-30 17:33:12,429 - DEBUG - run_login_tinder
+2023-06-30 17:33:43,762 - DEBUG - run_login_tinder
+2023-06-30 17:34:23,813 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+europa
+FA009
+True
+
+2023-06-30 17:34:25,383 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-30 17:34:25,885 - DEBUG - Путь в норме
+2023-06-30 17:34:26,398 - DEBUG - Кол-во почт в программе: 16
+2023-06-30 17:34:26,899 - DEBUG - Кол-во имен в session_names: 16
+2023-06-30 17:34:31,226 - DEBUG - Start work
+2023-06-30 17:34:31,234 - DEBUG - len(all_func: 6)
+2023-06-30 17:34:31,234 - DEBUG - i: 0
+2023-06-30 17:34:31,242 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:34:31,782 - DEBUG - use config_browser
+2023-06-30 17:34:31,782 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:34:32,373 - DEBUG - proxy is valid
+2023-06-30 17:34:43,478 - DEBUG - 204
+2023-06-30 17:34:47,893 - DEBUG - 204
+2023-06-30 17:35:02,088 - DEBUG - 204
+2023-06-30 17:35:02,088 - DEBUG - 
+ID Создаваемой сессии: B10085 ; Осталось зарегистрировать: 16
+
+['earliemeggers@gmail.com', 'c8ksoowb7zv', 'wvpheokracemina@yahoo.se', 'VZ674', 'B10085/VZ674/R010/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 17:35:02,088 - DEBUG - self.run_google_auth
+2023-06-30 17:35:02,088 - DEBUG - i: 1
+2023-06-30 17:35:02,088 - DEBUG - run_google_auth
+2023-06-30 17:35:21,492 - DEBUG - self.run_login_tinder
+2023-06-30 17:35:21,492 - DEBUG - i: 2
+2023-06-30 17:35:21,492 - DEBUG - run_login_tinder
+2023-06-30 17:35:47,697 - DEBUG - self.run_sms_registration
+2023-06-30 17:35:47,697 - DEBUG - i: 3
+2023-06-30 17:35:47,697 - DEBUG - run_sms_registration
+2023-06-30 17:36:03,049 - DEBUG - SMS registration error
+cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:36:03,050 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 90, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+2023-06-30 17:36:03,551 - DEBUG - len(all_func: 6)
+2023-06-30 17:36:03,551 - DEBUG - i: 2
+2023-06-30 17:36:03,551 - DEBUG - run_login_tinder
+2023-06-30 17:36:41,419 - DEBUG - self.run_sms_registration
+2023-06-30 17:36:41,419 - DEBUG - i: 3
+2023-06-30 17:36:41,419 - DEBUG - run_sms_registration
+2023-06-30 17:36:56,765 - DEBUG - SMS registration error
+cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:36:56,767 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 90, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 90, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+2023-06-30 17:36:57,269 - DEBUG - Cant fix sms_reg error
+2023-06-30 17:42:02,193 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+europa
+FA009
+True
+
+2023-06-30 17:42:03,206 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-30 17:42:03,707 - DEBUG - Путь в норме
+2023-06-30 17:42:04,214 - DEBUG - Кол-во почт в программе: 15
+2023-06-30 17:42:04,715 - DEBUG - Кол-во имен в session_names: 15
+2023-06-30 17:42:10,200 - DEBUG - Start work
+2023-06-30 17:42:10,208 - DEBUG - len(all_func: 6)
+2023-06-30 17:42:10,208 - DEBUG - i: 0
+2023-06-30 17:42:10,214 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:42:10,740 - DEBUG - use config_browser
+2023-06-30 17:42:10,740 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:42:12,441 - DEBUG - proxy is valid
+2023-06-30 17:42:24,088 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+                ^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Мерлин\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Мерлин\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "C:\Users\Мерлин\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1002)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='checker.soax.com', port=443): Max retries exceeded with url: /api/ipinfo (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1002)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 58, in run_start_session
+    self.profile_id, self.name_id, self.PORT = start_session(self.CITY, self.GROUP_ID)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\core.py", line 48, in start_session
+    proxy_path_url = stick(name_id)  # check proxy
+                     ^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\soax_api.py", line 57, in stick
+    requests.get(url, proxies={'http': full_url, 'https': full_url})
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 723, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 723, in <listcomp>
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 266, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='checker.soax.com', port=443): Max retries exceeded with url: /api/ipinfo (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1002)')))
+
+2023-06-30 17:42:30,921 - DEBUG - Input command in 213 line main.py: re
+2023-06-30 17:42:30,921 - DEBUG - len(all_func: 6)
+2023-06-30 17:42:30,921 - DEBUG - i: 0
+2023-06-30 17:42:30,924 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:42:31,441 - DEBUG - use config_browser
+2023-06-30 17:42:31,441 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:42:32,013 - DEBUG - proxy is valid
+2023-06-30 17:42:43,181 - DEBUG - 204
+2023-06-30 17:42:47,599 - DEBUG - 204
+2023-06-30 17:43:52,977 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+                ^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Мерлин\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Мерлин\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "C:\Users\Мерлин\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1002)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='checker.soax.com', port=443): Max retries exceeded with url: /api/ipinfo (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1002)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 58, in run_start_session
+    self.profile_id, self.name_id, self.PORT = start_session(self.CITY, self.GROUP_ID)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\core.py", line 48, in start_session
+    proxy_path_url = stick(name_id)  # check proxy
+                     ^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\soax_api.py", line 57, in stick
+    requests.get(url, proxies={'http': full_url, 'https': full_url})
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 723, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 723, in <listcomp>
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 266, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='checker.soax.com', port=443): Max retries exceeded with url: /api/ipinfo (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1002)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 58, in run_start_session
+    self.profile_id, self.name_id, self.PORT = start_session(self.CITY, self.GROUP_ID)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\core.py", line 56, in start_session
+    driver, profile_id = new_session(session_name, proxy_host, proxy_port, proxy_type, proxy_username, proxy_password,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\core.py", line 19, in new_session
+    driver = create_driver(profile_id, port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\info.py", line 94, in create_driver
+    driver = webdriver.Remote(command_executor=json['value'], options=options)
+                                               ~~~~^^^^^^^^^
+KeyError: 'value'
+
+2023-06-30 17:43:59,544 - DEBUG - Input command in 213 line main.py: ку
+2023-06-30 17:43:59,546 - DEBUG - len(all_func: 6)
+2023-06-30 17:43:59,546 - DEBUG - i: 0
+2023-06-30 17:43:59,567 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:44:00,126 - DEBUG - use config_browser
+2023-06-30 17:44:00,126 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:44:01,166 - DEBUG - proxy is valid
+2023-06-30 17:44:13,246 - DEBUG - 204
+2023-06-30 17:44:17,650 - DEBUG - 204
+2023-06-30 17:44:31,109 - DEBUG - 204
+2023-06-30 17:44:31,109 - DEBUG - 
+ID Создаваемой сессии: B10088 ; Осталось зарегистрировать: 15
+
+['juljaPerez83175@gmail.com', 'skg2txvfadwmmf', 'n5doloorahoral@bigmir.net', 'VZ677', 'B10088/VZ677/R008/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 17:44:31,109 - DEBUG - self.run_google_auth
+2023-06-30 17:44:31,109 - DEBUG - i: 1
+2023-06-30 17:44:31,110 - DEBUG - run_google_auth
+2023-06-30 17:45:08,467 - DEBUG - self.run_login_tinder
+2023-06-30 17:45:08,467 - DEBUG - i: 2
+2023-06-30 17:45:08,467 - DEBUG - run_login_tinder
+2023-06-30 17:45:42,022 - DEBUG - self.run_sms_registration
+2023-06-30 17:45:42,022 - DEBUG - i: 3
+2023-06-30 17:45:42,022 - DEBUG - run_sms_registration
+2023-06-30 17:45:57,548 - DEBUG - SMS registration error
+cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:45:57,554 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+                ^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Мерлин\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Мерлин\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "C:\Users\Мерлин\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1002)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='checker.soax.com', port=443): Max retries exceeded with url: /api/ipinfo (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1002)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 58, in run_start_session
+    self.profile_id, self.name_id, self.PORT = start_session(self.CITY, self.GROUP_ID)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\core.py", line 48, in start_session
+    proxy_path_url = stick(name_id)  # check proxy
+                     ^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\soax_api.py", line 57, in stick
+    requests.get(url, proxies={'http': full_url, 'https': full_url})
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 723, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 723, in <listcomp>
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 266, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='checker.soax.com', port=443): Max retries exceeded with url: /api/ipinfo (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1002)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 58, in run_start_session
+    self.profile_id, self.name_id, self.PORT = start_session(self.CITY, self.GROUP_ID)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\core.py", line 56, in start_session
+    driver, profile_id = new_session(session_name, proxy_host, proxy_port, proxy_type, proxy_username, proxy_password,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\core.py", line 19, in new_session
+    driver = create_driver(profile_id, port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\info.py", line 94, in create_driver
+    driver = webdriver.Remote(command_executor=json['value'], options=options)
+                                               ~~~~^^^^^^^^^
+KeyError: 'value'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 90, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+2023-06-30 17:45:58,056 - DEBUG - len(all_func: 6)
+2023-06-30 17:45:58,056 - DEBUG - i: 2
+2023-06-30 17:45:58,056 - DEBUG - run_login_tinder
+2023-06-30 17:46:36,564 - DEBUG - self.run_sms_registration
+2023-06-30 17:46:36,564 - DEBUG - i: 3
+2023-06-30 17:46:36,564 - DEBUG - run_sms_registration
+2023-06-30 17:48:01,956 - DEBUG - sms code not received
+2023-06-30 17:48:05,184 - DEBUG - sms-code not received
+2023-06-30 17:48:05,215 - DEBUG - SMS registration error
+
+2023-06-30 17:48:05,216 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 53, in sms_registration
+    raise ValueError
+ValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 90, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 205, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 90, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+2023-06-30 17:48:05,717 - DEBUG - Cant fix sms_reg error
+2023-06-30 17:48:09,305 - DEBUG - Input command in 213 line main.py: re
+2023-06-30 17:48:09,305 - DEBUG - len(all_func: 6)
+2023-06-30 17:48:09,306 - DEBUG - i: 3
+2023-06-30 17:48:09,306 - DEBUG - run_sms_registration
+2023-06-30 17:48:34,088 - DEBUG - result sms reg: None
+2023-06-30 17:48:34,088 - DEBUG - self.run_register
+2023-06-30 17:48:34,088 - DEBUG - i: 4
+2023-06-30 17:48:34,088 - DEBUG - run model_profile
+2023-06-30 17:48:43,093 - DEBUG - run photos fold
+2023-06-30 17:48:44,094 - DEBUG - arguments to search base fold: ('G:\\.shortcut-targets-by-id\\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\\Dating\\Photo base', 'VZ677')
+2023-06-30 17:48:44,094 - DEBUG - Yor photos_dir:G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+Yor photos_folder:VZ677
+2023-06-30 17:48:44,109 - DEBUG - VZ-Instagram Zerkalo- first subfolders
+2023-06-30 17:48:44,109 - DEBUG - base_fold res = VZ-Instagram Zerkalo
+2023-06-30 17:48:44,109 - DEBUG - arguments to search full folder: G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base\VZ-Instagram Zerkalo, VZ677
+2023-06-30 17:48:44,109 - DEBUG - Yor photos_dir:G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base\VZ-Instagram Zerkalo
+Yor photos_folder:VZ677
+2023-06-30 17:48:44,924 - DEBUG - second subfolders search:
+2023-06-30 17:48:44,924 - DEBUG - second subfolder is: VZ677
+2023-06-30 17:48:44,924 - DEBUG - subfolder: VZ677
+2023-06-30 17:48:53,699 - DEBUG - run model_profile2
+2023-06-30 17:49:00,821 - DEBUG - self.run_end_reg
+2023-06-30 17:49:00,821 - DEBUG - run end_reg
+2023-06-30 17:49:00,821 - DEBUG - end_reg start
+2023-06-30 17:49:04,503 - DEBUG - click to allow
+2023-06-30 17:49:06,293 - DEBUG - end_reg finaly
+2023-06-30 17:49:08,796 - DEBUG - Account was created!
+
+
+
+2023-06-30 17:49:13,303 - DEBUG - 204
+2023-06-30 17:49:16,873 - DEBUG - len(all_func: 6)
+2023-06-30 17:49:16,873 - DEBUG - i: 0
+2023-06-30 17:49:16,877 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:49:17,404 - DEBUG - use config_browser
+2023-06-30 17:49:17,404 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:49:18,221 - DEBUG - proxy is valid
+2023-06-30 17:49:27,234 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+europa
+FA009
+True
+
+2023-06-30 17:49:28,597 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-30 17:49:29,099 - DEBUG - Путь в норме
+2023-06-30 17:49:29,615 - DEBUG - Кол-во почт в программе: 11
+2023-06-30 17:49:30,117 - DEBUG - Кол-во имен в session_names: 11
+2023-06-30 17:49:32,780 - DEBUG - Start work
+2023-06-30 17:49:32,791 - DEBUG - len(all_func: 6)
+2023-06-30 17:49:32,792 - DEBUG - i: 0
+2023-06-30 17:49:32,808 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:49:33,362 - DEBUG - use config_browser
+2023-06-30 17:49:33,363 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:49:34,013 - DEBUG - proxy is valid
+2023-06-30 17:49:45,100 - DEBUG - 204
+2023-06-30 17:49:49,512 - DEBUG - 204
+2023-06-30 17:50:03,897 - DEBUG - 204
+2023-06-30 17:50:03,897 - DEBUG - 
+ID Создаваемой сессии: B10090 ; Осталось зарегистрировать: 11
+
+['kasubacori@gmail.com', 'i1aok1m7p', 'lphivanovelo@tlen.pl', 'VZ679', 'B10090/VZ679/R011/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 17:50:03,898 - DEBUG - self.run_google_auth
+2023-06-30 17:50:03,898 - DEBUG - i: 1
+2023-06-30 17:50:03,898 - DEBUG - run_google_auth
+2023-06-30 17:50:21,429 - DEBUG - self.run_login_tinder
+2023-06-30 17:50:21,429 - DEBUG - i: 2
+2023-06-30 17:50:21,429 - DEBUG - run_login_tinder
+2023-06-30 17:50:47,977 - DEBUG - self.run_sms_registration
+2023-06-30 17:50:47,977 - DEBUG - i: 3
+2023-06-30 17:50:47,977 - DEBUG - run_sms_registration
+2023-06-30 17:51:08,810 - DEBUG - SMS registration error
+cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:51:08,812 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+2023-06-30 17:51:09,313 - DEBUG - len(all_func: 6)
+2023-06-30 17:51:09,313 - DEBUG - i: 2
+2023-06-30 17:51:09,314 - DEBUG - run_login_tinder
+2023-06-30 17:51:42,668 - DEBUG - Tinder authorization error
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 16, in login_in_tinder
+    timer(driver.find_element, By.CSS_SELECTOR, "a[class='c1p6lbu0 Miw(120px)'] div[class='l17p5q9z']").click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+2023-06-30 17:51:42,681 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 16, in login_in_tinder
+    timer(driver.find_element, By.CSS_SELECTOR, "a[class='c1p6lbu0 Miw(120px)'] div[class='l17p5q9z']").click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 84, in run_login_tinder
+    login_in_tinder(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 110, in wrapper
+    raise TinderLoginError
+lib.error.CustomException: Custom Exception: TinderLoginError
+
+2023-06-30 17:51:47,873 - DEBUG - Input command in 213 line main.py: next
+2023-06-30 17:51:47,874 - DEBUG - len(all_func: 6)
+2023-06-30 17:51:47,874 - DEBUG - i: 3
+2023-06-30 17:51:47,874 - DEBUG - run_sms_registration
+2023-06-30 17:52:08,210 - DEBUG - SMS registration error
+cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:52:08,213 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 16, in login_in_tinder
+    timer(driver.find_element, By.CSS_SELECTOR, "a[class='c1p6lbu0 Miw(120px)'] div[class='l17p5q9z']").click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 84, in run_login_tinder
+    login_in_tinder(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 110, in wrapper
+    raise TinderLoginError
+lib.error.CustomException: Custom Exception: TinderLoginError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+2023-06-30 17:52:08,714 - DEBUG - Cant fix sms_reg error
+2023-06-30 17:52:18,065 - DEBUG - Input command in 213 line main.py: next
+2023-06-30 17:52:18,066 - DEBUG - len(all_func: 6)
+2023-06-30 17:52:18,066 - DEBUG - i: 4
+2023-06-30 17:52:18,066 - DEBUG - run model_profile
+2023-06-30 17:52:50,676 - DEBUG - Error in block 5.1
+cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:52:50,688 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 16, in login_in_tinder
+    timer(driver.find_element, By.CSS_SELECTOR, "a[class='c1p6lbu0 Miw(120px)'] div[class='l17p5q9z']").click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 84, in run_login_tinder
+    login_in_tinder(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 110, in wrapper
+    raise TinderLoginError
+lib.error.CustomException: Custom Exception: TinderLoginError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 110, in model_profile
+    timer(sender, driver, "//input[@placeholder='MM']", random.randint(1, 12))
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+lib.error.CustomException: Custom Exception: ModelProfileError
+
+2023-06-30 17:52:55,737 - DEBUG - Input command in 213 line main.py: next
+2023-06-30 17:52:55,737 - DEBUG - len(all_func: 6)
+2023-06-30 17:52:55,737 - DEBUG - run end_reg
+2023-06-30 17:52:55,737 - DEBUG - end_reg start
+2023-06-30 17:53:11,042 - DEBUG - EXCEPTION RUN END REG: cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:53:12,544 - DEBUG - Account was created!
+
+
+
+2023-06-30 17:53:17,085 - DEBUG - 204
+2023-06-30 17:53:20,165 - DEBUG - len(all_func: 6)
+2023-06-30 17:53:20,165 - DEBUG - i: 0
+2023-06-30 17:53:20,174 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:53:20,756 - DEBUG - use config_browser
+2023-06-30 17:53:20,757 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:53:21,460 - DEBUG - proxy is valid
+2023-06-30 17:53:32,741 - DEBUG - 204
+2023-06-30 17:53:37,787 - DEBUG - 204
+2023-06-30 17:53:51,856 - DEBUG - 204
+2023-06-30 17:53:51,856 - DEBUG - 
+ID Создаваемой сессии: B10091 ; Осталось зарегистрировать: 10
+
+['madelinesival@gmail.com', 'dwvh5m7d5x0kut', 'eakomiwarigiri90cwq@yahoomail.com', 'VZ680', 'B10091/VZ680/R010/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 17:53:51,856 - DEBUG - self.run_google_auth
+2023-06-30 17:53:51,857 - DEBUG - i: 1
+2023-06-30 17:53:51,857 - DEBUG - run_google_auth
+2023-06-30 17:54:08,295 - DEBUG - self.run_login_tinder
+2023-06-30 17:54:08,295 - DEBUG - i: 2
+2023-06-30 17:54:08,295 - DEBUG - run_login_tinder
+2023-06-30 17:54:44,866 - DEBUG - self.run_sms_registration
+2023-06-30 17:54:44,866 - DEBUG - i: 3
+2023-06-30 17:54:44,866 - DEBUG - run_sms_registration
+2023-06-30 17:55:05,275 - DEBUG - SMS registration error
+cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:55:05,278 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 110, in model_profile
+    timer(sender, driver, "//input[@placeholder='MM']", random.randint(1, 12))
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+lib.error.CustomException: Custom Exception: ModelProfileError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+2023-06-30 17:55:05,779 - DEBUG - Cant fix sms_reg error
+2023-06-30 17:55:28,650 - DEBUG - Input command in 213 line main.py: next
+2023-06-30 17:55:28,651 - DEBUG - len(all_func: 6)
+2023-06-30 17:55:28,651 - DEBUG - i: 4
+2023-06-30 17:55:28,651 - DEBUG - run model_profile
+2023-06-30 17:56:01,421 - DEBUG - Error in block 5.1
+cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:56:01,452 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 110, in model_profile
+    timer(sender, driver, "//input[@placeholder='MM']", random.randint(1, 12))
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+lib.error.CustomException: Custom Exception: ModelProfileError
+
+2023-06-30 17:56:16,850 - DEBUG - Input command in 213 line main.py: next
+2023-06-30 17:56:16,850 - DEBUG - len(all_func: 6)
+2023-06-30 17:56:16,850 - DEBUG - run end_reg
+2023-06-30 17:56:16,850 - DEBUG - end_reg start
+2023-06-30 17:56:32,230 - DEBUG - EXCEPTION RUN END REG: cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:56:33,731 - DEBUG - Account was created!
+
+
+
+2023-06-30 17:56:38,191 - DEBUG - 204
+2023-06-30 17:56:41,393 - DEBUG - len(all_func: 6)
+2023-06-30 17:56:41,393 - DEBUG - i: 0
+2023-06-30 17:56:41,423 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:56:41,950 - DEBUG - use config_browser
+2023-06-30 17:56:41,950 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:56:42,943 - DEBUG - proxy is valid
+2023-06-30 17:56:54,595 - DEBUG - 204
+2023-06-30 17:56:58,978 - DEBUG - 204
+2023-06-30 17:57:13,153 - DEBUG - 204
+2023-06-30 17:57:13,153 - DEBUG - 
+ID Создаваемой сессии: B10092 ; Осталось зарегистрировать: 9
+
+['maioranotricia@gmail.com', '05w6yudjjxo', 'k5surinase94l@unliminet.de', 'VZ681', 'B10092/VZ681/R010/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 17:57:13,154 - DEBUG - self.run_google_auth
+2023-06-30 17:57:13,154 - DEBUG - i: 1
+2023-06-30 17:57:13,154 - DEBUG - run_google_auth
+2023-06-30 17:57:33,223 - DEBUG - self.run_login_tinder
+2023-06-30 17:57:33,223 - DEBUG - i: 2
+2023-06-30 17:57:33,223 - DEBUG - run_login_tinder
+2023-06-30 17:58:08,100 - DEBUG - self.run_sms_registration
+2023-06-30 17:58:08,100 - DEBUG - i: 3
+2023-06-30 17:58:08,100 - DEBUG - run_sms_registration
+2023-06-30 17:58:28,520 - DEBUG - SMS registration error
+cannot access local variable 'result' where it is not associated with a value
+2023-06-30 17:58:28,522 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 110, in model_profile
+    timer(sender, driver, "//input[@placeholder='MM']", random.randint(1, 12))
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+lib.error.CustomException: Custom Exception: ModelProfileError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+2023-06-30 17:58:29,024 - DEBUG - Cant fix sms_reg error
+2023-06-30 17:58:49,120 - DEBUG - Input command in 213 line main.py: skip
+2023-06-30 17:58:49,120 - DEBUG - ex, input skip, finalization session...
+2023-06-30 17:58:53,615 - DEBUG - 204
+2023-06-30 17:58:55,211 - DEBUG - Finalization complete...
+2023-06-30 17:58:55,212 - DEBUG - len(all_func: 6)
+2023-06-30 17:58:55,212 - DEBUG - i: 0
+2023-06-30 17:58:55,218 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 17:58:55,754 - DEBUG - use config_browser
+2023-06-30 17:58:55,754 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 17:58:57,566 - DEBUG - proxy is valid
+2023-06-30 17:59:09,743 - DEBUG - 204
+2023-06-30 17:59:14,125 - DEBUG - 204
+2023-06-30 17:59:29,203 - DEBUG - 204
+2023-06-30 17:59:29,203 - DEBUG - 
+ID Создаваемой сессии: B10093 ; Осталось зарегистрировать: 8
+
+['nishimuramarybelle@gmail.com', 'hgfhhdtv2ovh', 'qdknogoshiki84ejd@ymail.com', 'VZ682', 'B10093/VZ682/R006/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 17:59:29,204 - DEBUG - self.run_google_auth
+2023-06-30 17:59:29,204 - DEBUG - i: 1
+2023-06-30 17:59:29,204 - DEBUG - run_google_auth
+2023-06-30 17:59:43,611 - DEBUG - self.run_login_tinder
+2023-06-30 17:59:43,611 - DEBUG - i: 2
+2023-06-30 17:59:43,611 - DEBUG - run_login_tinder
+2023-06-30 18:00:11,832 - DEBUG - self.run_sms_registration
+2023-06-30 18:00:11,832 - DEBUG - i: 3
+2023-06-30 18:00:11,832 - DEBUG - run_sms_registration
+2023-06-30 18:00:37,190 - DEBUG - result sms reg: None
+2023-06-30 18:00:37,190 - DEBUG - self.run_register
+2023-06-30 18:00:37,190 - DEBUG - i: 4
+2023-06-30 18:00:37,191 - DEBUG - run model_profile
+2023-06-30 18:00:45,273 - DEBUG - run photos fold
+2023-06-30 18:00:46,274 - DEBUG - arguments to search base fold: ('G:\\.shortcut-targets-by-id\\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\\Dating\\Photo base', 'VZ682')
+2023-06-30 18:00:46,274 - DEBUG - Yor photos_dir:G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+Yor photos_folder:VZ682
+2023-06-30 18:00:46,288 - DEBUG - VZ-Instagram Zerkalo- first subfolders
+2023-06-30 18:00:46,288 - DEBUG - base_fold res = VZ-Instagram Zerkalo
+2023-06-30 18:00:46,289 - DEBUG - arguments to search full folder: G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base\VZ-Instagram Zerkalo, VZ682
+2023-06-30 18:00:46,289 - DEBUG - Yor photos_dir:G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base\VZ-Instagram Zerkalo
+Yor photos_folder:VZ682
+2023-06-30 18:00:47,082 - DEBUG - second subfolders search:
+2023-06-30 18:00:47,082 - DEBUG - second subfolder is: VZ682
+2023-06-30 18:00:47,082 - DEBUG - subfolder: VZ682
+2023-06-30 18:00:54,681 - DEBUG - run model_profile2
+2023-06-30 18:01:01,816 - DEBUG - self.run_end_reg
+2023-06-30 18:01:01,816 - DEBUG - run end_reg
+2023-06-30 18:01:01,816 - DEBUG - end_reg start
+2023-06-30 18:01:05,462 - DEBUG - click to allow
+2023-06-30 18:01:07,070 - DEBUG - end_reg finaly
+2023-06-30 18:01:09,571 - DEBUG - Account was created!
+
+
+
+2023-06-30 18:01:14,104 - DEBUG - 204
+2023-06-30 18:01:17,316 - DEBUG - len(all_func: 6)
+2023-06-30 18:01:17,316 - DEBUG - i: 0
+2023-06-30 18:01:17,323 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 18:01:17,849 - DEBUG - use config_browser
+2023-06-30 18:01:17,849 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 18:01:18,503 - DEBUG - proxy is valid
+2023-06-30 18:01:29,593 - DEBUG - 204
+2023-06-30 18:01:33,986 - DEBUG - 204
+2023-06-30 18:01:47,825 - DEBUG - 204
+2023-06-30 18:01:47,825 - DEBUG - 
+ID Создаваемой сессии: B10094 ; Осталось зарегистрировать: 7
+
+['schapertana@gmail.com', 'mjk19mixj', 'coyadasananyy@jetable.fr.nf', 'VZ683', 'B10094/VZ683/R008/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 18:01:47,826 - DEBUG - self.run_google_auth
+2023-06-30 18:01:47,826 - DEBUG - i: 1
+2023-06-30 18:01:47,826 - DEBUG - run_google_auth
+2023-06-30 18:02:11,421 - DEBUG - Google authorization error
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 110, in model_profile
+    timer(sender, driver, "//input[@placeholder='MM']", random.randint(1, 12))
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+lib.error.CustomException: Custom Exception: ModelProfileError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 26, in google_auth
+    driver.find_element(By.XPATH, "(//ul[@class='OVnw0d'])[1]")
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"(//ul[@class='OVnw0d'])[1]"}
+  (Session info: chrome=114.0.5735.45)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF70B427192+118162]
+	(No symbol) [0x00007FF70B384AF2]
+	(No symbol) [0x00007FF70B23FA85]
+	(No symbol) [0x00007FF70B27C391]
+	(No symbol) [0x00007FF70B27C59C]
+	(No symbol) [0x00007FF70B2B3447]
+	(No symbol) [0x00007FF70B299D2F]
+	(No symbol) [0x00007FF70B2B10E3]
+	(No symbol) [0x00007FF70B299AC3]
+	(No symbol) [0x00007FF70B271A88]
+	(No symbol) [0x00007FF70B272BE4]
+	GetHandleVerifier [0x00007FF70B7B0CA2+3827874]
+	GetHandleVerifier [0x00007FF70B7BD63C+3879484]
+	GetHandleVerifier [0x00007FF70B7B62F5+3849973]
+	GetHandleVerifier [0x00007FF70B5565D5+1360341]
+	(No symbol) [0x00007FF70B3901F8]
+	(No symbol) [0x00007FF70B38C014]
+	(No symbol) [0x00007FF70B38C10C]
+	(No symbol) [0x00007FF70B37C478]
+	BaseThreadInitThunk [0x00007FF8207026AD+29]
+	RtlUserThreadStart [0x00007FF821B6A9F8+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 34, in google_auth
+    driver.find_element(By.XPATH, " //div[@class='WARaV']")
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":" //div[@class='WARaV']"}
+  (Session info: chrome=114.0.5735.45)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF70B427192+118162]
+	(No symbol) [0x00007FF70B384AF2]
+	(No symbol) [0x00007FF70B23FA85]
+	(No symbol) [0x00007FF70B27C391]
+	(No symbol) [0x00007FF70B27C59C]
+	(No symbol) [0x00007FF70B2B3447]
+	(No symbol) [0x00007FF70B299D2F]
+	(No symbol) [0x00007FF70B2B10E3]
+	(No symbol) [0x00007FF70B299AC3]
+	(No symbol) [0x00007FF70B271A88]
+	(No symbol) [0x00007FF70B272BE4]
+	GetHandleVerifier [0x00007FF70B7B0CA2+3827874]
+	GetHandleVerifier [0x00007FF70B7BD63C+3879484]
+	GetHandleVerifier [0x00007FF70B7B62F5+3849973]
+	GetHandleVerifier [0x00007FF70B5565D5+1360341]
+	(No symbol) [0x00007FF70B3901F8]
+	(No symbol) [0x00007FF70B38C014]
+	(No symbol) [0x00007FF70B38C10C]
+	(No symbol) [0x00007FF70B37C478]
+	BaseThreadInitThunk [0x00007FF8207026AD+29]
+	RtlUserThreadStart [0x00007FF821B6A9F8+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 36, in google_auth
+    driver.find_element(By.CSS_SELECTOR, ".T-I.T-I-KE.L3")
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".T-I.T-I-KE.L3"}
+  (Session info: chrome=114.0.5735.45)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF70B427192+118162]
+	(No symbol) [0x00007FF70B384AF2]
+	(No symbol) [0x00007FF70B23FA85]
+	(No symbol) [0x00007FF70B27C391]
+	(No symbol) [0x00007FF70B27C59C]
+	(No symbol) [0x00007FF70B2B3447]
+	(No symbol) [0x00007FF70B299D2F]
+	(No symbol) [0x00007FF70B2B10E3]
+	(No symbol) [0x00007FF70B299AC3]
+	(No symbol) [0x00007FF70B271A88]
+	(No symbol) [0x00007FF70B272BE4]
+	GetHandleVerifier [0x00007FF70B7B0CA2+3827874]
+	GetHandleVerifier [0x00007FF70B7BD63C+3879484]
+	GetHandleVerifier [0x00007FF70B7B62F5+3849973]
+	GetHandleVerifier [0x00007FF70B5565D5+1360341]
+	(No symbol) [0x00007FF70B3901F8]
+	(No symbol) [0x00007FF70B38C014]
+	(No symbol) [0x00007FF70B38C10C]
+	(No symbol) [0x00007FF70B37C478]
+	BaseThreadInitThunk [0x00007FF8207026AD+29]
+	RtlUserThreadStart [0x00007FF821B6A9F8+40]
+
+
+2023-06-30 18:02:11,426 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 110, in model_profile
+    timer(sender, driver, "//input[@placeholder='MM']", random.randint(1, 12))
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+lib.error.CustomException: Custom Exception: ModelProfileError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 26, in google_auth
+    driver.find_element(By.XPATH, "(//ul[@class='OVnw0d'])[1]")
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"(//ul[@class='OVnw0d'])[1]"}
+  (Session info: chrome=114.0.5735.45)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF70B427192+118162]
+	(No symbol) [0x00007FF70B384AF2]
+	(No symbol) [0x00007FF70B23FA85]
+	(No symbol) [0x00007FF70B27C391]
+	(No symbol) [0x00007FF70B27C59C]
+	(No symbol) [0x00007FF70B2B3447]
+	(No symbol) [0x00007FF70B299D2F]
+	(No symbol) [0x00007FF70B2B10E3]
+	(No symbol) [0x00007FF70B299AC3]
+	(No symbol) [0x00007FF70B271A88]
+	(No symbol) [0x00007FF70B272BE4]
+	GetHandleVerifier [0x00007FF70B7B0CA2+3827874]
+	GetHandleVerifier [0x00007FF70B7BD63C+3879484]
+	GetHandleVerifier [0x00007FF70B7B62F5+3849973]
+	GetHandleVerifier [0x00007FF70B5565D5+1360341]
+	(No symbol) [0x00007FF70B3901F8]
+	(No symbol) [0x00007FF70B38C014]
+	(No symbol) [0x00007FF70B38C10C]
+	(No symbol) [0x00007FF70B37C478]
+	BaseThreadInitThunk [0x00007FF8207026AD+29]
+	RtlUserThreadStart [0x00007FF821B6A9F8+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 34, in google_auth
+    driver.find_element(By.XPATH, " //div[@class='WARaV']")
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":" //div[@class='WARaV']"}
+  (Session info: chrome=114.0.5735.45)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF70B427192+118162]
+	(No symbol) [0x00007FF70B384AF2]
+	(No symbol) [0x00007FF70B23FA85]
+	(No symbol) [0x00007FF70B27C391]
+	(No symbol) [0x00007FF70B27C59C]
+	(No symbol) [0x00007FF70B2B3447]
+	(No symbol) [0x00007FF70B299D2F]
+	(No symbol) [0x00007FF70B2B10E3]
+	(No symbol) [0x00007FF70B299AC3]
+	(No symbol) [0x00007FF70B271A88]
+	(No symbol) [0x00007FF70B272BE4]
+	GetHandleVerifier [0x00007FF70B7B0CA2+3827874]
+	GetHandleVerifier [0x00007FF70B7BD63C+3879484]
+	GetHandleVerifier [0x00007FF70B7B62F5+3849973]
+	GetHandleVerifier [0x00007FF70B5565D5+1360341]
+	(No symbol) [0x00007FF70B3901F8]
+	(No symbol) [0x00007FF70B38C014]
+	(No symbol) [0x00007FF70B38C10C]
+	(No symbol) [0x00007FF70B37C478]
+	BaseThreadInitThunk [0x00007FF8207026AD+29]
+	RtlUserThreadStart [0x00007FF821B6A9F8+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 36, in google_auth
+    driver.find_element(By.CSS_SELECTOR, ".T-I.T-I-KE.L3")
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".T-I.T-I-KE.L3"}
+  (Session info: chrome=114.0.5735.45)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF70B427192+118162]
+	(No symbol) [0x00007FF70B384AF2]
+	(No symbol) [0x00007FF70B23FA85]
+	(No symbol) [0x00007FF70B27C391]
+	(No symbol) [0x00007FF70B27C59C]
+	(No symbol) [0x00007FF70B2B3447]
+	(No symbol) [0x00007FF70B299D2F]
+	(No symbol) [0x00007FF70B2B10E3]
+	(No symbol) [0x00007FF70B299AC3]
+	(No symbol) [0x00007FF70B271A88]
+	(No symbol) [0x00007FF70B272BE4]
+	GetHandleVerifier [0x00007FF70B7B0CA2+3827874]
+	GetHandleVerifier [0x00007FF70B7BD63C+3879484]
+	GetHandleVerifier [0x00007FF70B7B62F5+3849973]
+	GetHandleVerifier [0x00007FF70B5565D5+1360341]
+	(No symbol) [0x00007FF70B3901F8]
+	(No symbol) [0x00007FF70B38C014]
+	(No symbol) [0x00007FF70B38C10C]
+	(No symbol) [0x00007FF70B37C478]
+	BaseThreadInitThunk [0x00007FF8207026AD+29]
+	RtlUserThreadStart [0x00007FF821B6A9F8+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 72, in run_google_auth
+    res = google_auth(self.driver, self.email, self.password, self.reserve)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 102, in wrapper
+    raise GoogleAuthError
+lib.error.CustomException: Custom Exception: GoogleAuthError
+
+2023-06-30 18:02:37,008 - DEBUG - Input command in 213 line main.py: skip
+2023-06-30 18:02:37,008 - DEBUG - ex, input skip, finalization session...
+2023-06-30 18:02:41,432 - DEBUG - 204
+2023-06-30 18:02:42,510 - DEBUG - Finalization complete...
+2023-06-30 18:02:42,510 - DEBUG - len(all_func: 6)
+2023-06-30 18:02:42,510 - DEBUG - i: 0
+2023-06-30 18:02:42,517 - DEBUG - Подключение к порту 34999 установлено
+2023-06-30 18:02:43,041 - DEBUG - use config_browser
+2023-06-30 18:02:43,041 - DEBUG - group_id in group_port_mapping: True
+port in group_port_mapping[group_id]: True
+2023-06-30 18:02:43,620 - DEBUG - proxy is valid
+2023-06-30 18:02:55,506 - DEBUG - 204
+2023-06-30 18:02:59,930 - DEBUG - 204
+2023-06-30 18:03:16,139 - DEBUG - 204
+2023-06-30 18:03:16,140 - DEBUG - 
+ID Создаваемой сессии: B10095 ; Осталось зарегистрировать: 6
+
+['shaquanabelgrade@gmail.com', 'sqqwxlqgpu', '8buckrafitchwith2022392@TempEMail.net', 'VZ684', 'B10095/VZ684/R008/29.06.23 (GEO Perevod) Tinder', 'c644e8b3-1388-4c1c-83e9-b62246761c0f', 'FA009']
+2023-06-30 18:03:16,140 - DEBUG - self.run_google_auth
+2023-06-30 18:03:16,140 - DEBUG - i: 1
+2023-06-30 18:03:16,140 - DEBUG - run_google_auth
+2023-06-30 18:03:42,101 - DEBUG - Google authorization error
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\tinder_login.py", line 110, in model_profile
+    timer(sender, driver, "//input[@placeholder='MM']", random.randint(1, 12))
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 97, in run_register
+    model_profile(self.driver)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 127, in wrapper
+    raise ModelProfileError
+lib.error.CustomException: Custom Exception: ModelProfileError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\sms_code.py", line 8, in sms_registration
+    timer(clicker, driver, "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 91, in run_sms_registration
+    res = sms_registration(self.driver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 118, in wrapper
+    raise SMSRegistrationError
+lib.error.CustomException: Custom Exception: SMSRegistrationError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 26, in google_auth
+    driver.find_element(By.XPATH, "(//ul[@class='OVnw0d'])[1]")
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"(//ul[@class='OVnw0d'])[1]"}
+  (Session info: chrome=114.0.5735.45)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF70B427192+118162]
+	(No symbol) [0x00007FF70B384AF2]
+	(No symbol) [0x00007FF70B23FA85]
+	(No symbol) [0x00007FF70B27C391]
+	(No symbol) [0x00007FF70B27C59C]
+	(No symbol) [0x00007FF70B2B3447]
+	(No symbol) [0x00007FF70B299D2F]
+	(No symbol) [0x00007FF70B2B10E3]
+	(No symbol) [0x00007FF70B299AC3]
+	(No symbol) [0x00007FF70B271A88]
+	(No symbol) [0x00007FF70B272BE4]
+	GetHandleVerifier [0x00007FF70B7B0CA2+3827874]
+	GetHandleVerifier [0x00007FF70B7BD63C+3879484]
+	GetHandleVerifier [0x00007FF70B7B62F5+3849973]
+	GetHandleVerifier [0x00007FF70B5565D5+1360341]
+	(No symbol) [0x00007FF70B3901F8]
+	(No symbol) [0x00007FF70B38C014]
+	(No symbol) [0x00007FF70B38C10C]
+	(No symbol) [0x00007FF70B37C478]
+	BaseThreadInitThunk [0x00007FF8207026AD+29]
+	RtlUserThreadStart [0x00007FF821B6A9F8+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 34, in google_auth
+    driver.find_element(By.XPATH, " //div[@class='WARaV']")
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":" //div[@class='WARaV']"}
+  (Session info: chrome=114.0.5735.45)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF70B427192+118162]
+	(No symbol) [0x00007FF70B384AF2]
+	(No symbol) [0x00007FF70B23FA85]
+	(No symbol) [0x00007FF70B27C391]
+	(No symbol) [0x00007FF70B27C59C]
+	(No symbol) [0x00007FF70B2B3447]
+	(No symbol) [0x00007FF70B299D2F]
+	(No symbol) [0x00007FF70B2B10E3]
+	(No symbol) [0x00007FF70B299AC3]
+	(No symbol) [0x00007FF70B271A88]
+	(No symbol) [0x00007FF70B272BE4]
+	GetHandleVerifier [0x00007FF70B7B0CA2+3827874]
+	GetHandleVerifier [0x00007FF70B7BD63C+3879484]
+	GetHandleVerifier [0x00007FF70B7B62F5+3849973]
+	GetHandleVerifier [0x00007FF70B5565D5+1360341]
+	(No symbol) [0x00007FF70B3901F8]
+	(No symbol) [0x00007FF70B38C014]
+	(No symbol) [0x00007FF70B38C10C]
+	(No symbol) [0x00007FF70B37C478]
+	BaseThreadInitThunk [0x00007FF8207026AD+29]
+	RtlUserThreadStart [0x00007FF821B6A9F8+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 36, in google_auth
+    driver.find_element(By.CSS_SELECTOR, ".T-I.T-I-KE.L3")
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "D:\Skript\Tinder_Regist\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".T-I.T-I-KE.L3"}
+  (Session info: chrome=114.0.5735.45)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF70B427192+118162]
+	(No symbol) [0x00007FF70B384AF2]
+	(No symbol) [0x00007FF70B23FA85]
+	(No symbol) [0x00007FF70B27C391]
+	(No symbol) [0x00007FF70B27C59C]
+	(No symbol) [0x00007FF70B2B3447]
+	(No symbol) [0x00007FF70B299D2F]
+	(No symbol) [0x00007FF70B2B10E3]
+	(No symbol) [0x00007FF70B299AC3]
+	(No symbol) [0x00007FF70B271A88]
+	(No symbol) [0x00007FF70B272BE4]
+	GetHandleVerifier [0x00007FF70B7B0CA2+3827874]
+	GetHandleVerifier [0x00007FF70B7BD63C+3879484]
+	GetHandleVerifier [0x00007FF70B7B62F5+3849973]
+	GetHandleVerifier [0x00007FF70B5565D5+1360341]
+	(No symbol) [0x00007FF70B3901F8]
+	(No symbol) [0x00007FF70B38C014]
+	(No symbol) [0x00007FF70B38C10C]
+	(No symbol) [0x00007FF70B37C478]
+	BaseThreadInitThunk [0x00007FF8207026AD+29]
+	RtlUserThreadStart [0x00007FF821B6A9F8+40]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 72, in run_google_auth
+    res = google_auth(self.driver, self.email, self.password, self.reserve)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 102, in wrapper
+    raise GoogleAuthError
+lib.error.CustomException: Custom Exception: GoogleAuthError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 19, in google_auth
+    timer(sender, driver, '//*[@id ="password"]/div[1]/div / div[1]/input', password)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+2023-06-30 18:03:42,102 - DEBUG - EXCEPTION!! Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 85, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\core\google_auto.py", line 19, in google_auth
+    timer(sender, driver, '//*[@id ="password"]/div[1]/div / div[1]/input', password)
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 62, in timer
+    return result
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 72, in run_google_auth
+    res = google_auth(self.driver, self.email, self.password, self.reserve)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 102, in wrapper
+    raise GoogleAuthError
+  File "D:\Skript\Tinder_Regist\app\main.py", line 206, in __call__
+    eval(f'{self.all_func[i]}()')
+  File "<string>", line 1, in <module>
+  File "D:\Skript\Tinder_Regist\app\main.py", line 72, in run_google_auth
+    res = google_auth(self.driver, self.email, self.password, self.reserve)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Skript\Tinder_Regist\lib\error.py", line 102, in wrapper
+    raise GoogleAuthError
+lib.error.CustomException: Custom Exception: GoogleAuthError
+
+2023-06-30 18:05:35,729 - DEBUG - Input command in 213 line main.py: re
+2023-06-30 18:05:35,729 - DEBUG - len(all_func: 6)
+2023-06-30 18:05:35,729 - DEBUG - i: 1
+2023-06-30 18:05:35,729 - DEBUG - run_google_auth
+2023-06-30 18:05:55,729 - DEBUG - self.run_login_tinder
+2023-06-30 18:05:55,729 - DEBUG - i: 2
+2023-06-30 18:05:55,729 - DEBUG - run_login_tinder
+2023-06-30 18:06:22,440 - DEBUG - self.run_sms_registration
+2023-06-30 18:06:22,440 - DEBUG - i: 3
+2023-06-30 18:06:22,440 - DEBUG - run_sms_registration
+2023-06-30 18:06:50,509 - DEBUG - result sms reg: None
+2023-06-30 18:06:50,509 - DEBUG - self.run_register
+2023-06-30 18:06:50,510 - DEBUG - i: 4
+2023-06-30 18:06:50,510 - DEBUG - run model_profile
+2023-06-30 18:06:58,415 - DEBUG - run photos fold
+2023-06-30 18:06:59,415 - DEBUG - arguments to search base fold: ('G:\\.shortcut-targets-by-id\\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\\Dating\\Photo base', 'VZ684')
+2023-06-30 18:06:59,415 - DEBUG - Yor photos_dir:G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+Yor photos_folder:VZ684
+2023-06-30 18:06:59,425 - DEBUG - VZ-Instagram Zerkalo- first subfolders
+2023-06-30 18:06:59,425 - DEBUG - base_fold res = VZ-Instagram Zerkalo
+2023-06-30 18:06:59,425 - DEBUG - arguments to search full folder: G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base\VZ-Instagram Zerkalo, VZ684
+2023-06-30 18:06:59,425 - DEBUG - Yor photos_dir:G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base\VZ-Instagram Zerkalo
+Yor photos_folder:VZ684
+2023-06-30 18:07:00,184 - DEBUG - second subfolders search:
+2023-06-30 18:07:00,184 - DEBUG - second subfolder is: VZ684
+2023-06-30 18:07:00,184 - DEBUG - subfolder: VZ684
+2023-06-30 18:07:07,701 - DEBUG - run model_profile2
+2023-06-30 18:07:14,765 - DEBUG - self.run_end_reg
+2023-06-30 18:07:14,765 - DEBUG - run end_reg
+2023-06-30 18:07:14,765 - DEBUG - end_reg start
+2023-06-30 18:07:16,944 - DEBUG - click to allow
+2023-06-30 18:07:18,521 - DEBUG - end_reg finaly
+2023-06-30 18:07:21,023 - DEBUG - Account was created!
+
+
+

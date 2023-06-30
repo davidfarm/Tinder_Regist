@@ -41,22 +41,22 @@ def sms_registration(driver):
             while flg1:
                 log_dispatcher.info(to_write='sms code not received')
                 send = input(YELLOW + f"Код не пришел. Ожидание кода {tot}с. Введите символ для продолжения: " + RESET)
-                if send == "y":
-                    flg = False
-                    base_flg = False
-                    break
-                elif send == "n":
-                    flg = True
-                    base_flg = False
-                    log_dispatcher.info(to_print='Повторяю попытку смс-авторизации, ошибку ниже игнорируй...',
-                                        to_write='sms-code not received', msg_type='error')
-                    raise ValueError
-                elif send == "re":
-                    flg = True
-                    clicker(driver, "//button[normalize-space()='Update Contact Info']")
-                    break
-                else:
-                    log_dispatcher.info(to_print='Не верная команда, команды: y/n', msg_type='error')
+                # if send == "y":
+                #     flg = False
+                #     base_flg = False
+                #     break
+                # elif send == "n":
+                flg = True
+                base_flg = False
+                log_dispatcher.info(to_print='Повторяю попытку смс-авторизации, ошибку ниже игнорируй...',
+                                    to_write='sms-code not received', msg_type='error')
+                raise ValueError
+                # elif send == "re":
+                #     flg = True
+                #     clicker(driver, "//button[normalize-space()='Update Contact Info']")
+                #     break
+                # else:
+                #     log_dispatcher.info(to_print='Не верная команда, команды: y/n', msg_type='error')
             if flg:
                 base_flg = False
                 break

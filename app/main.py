@@ -87,6 +87,7 @@ class Registration:
 
     def run_sms_registration(self):
         log_dispatcher.info(to_write='run_sms_registration')
+        time.sleep(5)
         res = sms_registration(self.driver)
         log_dispatcher.info(to_write=f'result sms reg: {res}')
         ban_dp.set_status('Active')

@@ -162,8 +162,14 @@ def create_profile(session_name, port):
         "browser": "mimic",
         "os": "win",
         "enableLock": True,
-        "startUrl": f"https://tinder.com/ru"
+        "startUrl": f"https://tinder.com/ru",
+        "extensions": {
+            "enable": True,
+            "names": ["capmonster.crx"]
+        }
+
     }
+
     header = {
         "accept": "application/json",
         "Content-Type": "application/json"
