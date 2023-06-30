@@ -3,17 +3,15 @@ from core.config import *
 from lib.info import check_gmail, RESET, RED, BOLD, BLUE
 from selenium.webdriver.common.by import By
 
-
 import os
 import time
 import requests
 
-version = '0.6.2'
-
+version = '0.6.3.2'
 
 
 def check():
-    log_dispatcher.info(to_print=f"Версия программы: {version}")
+    log_dispatcher.info(to_print=f"Версия программы: {version}", msg_type='error')
     log_dispatcher.info(to_print=f"Проверка состояния...")
     time.sleep(0.5)
 
@@ -24,7 +22,8 @@ def check():
         msg = 'Путь не верный'
         log_dispatcher.info(to_print=msg,
                             to_write=f'EXCEPTION!!! File path is not correct!'
-                                     f'\nSet path: {config_data.get_photos_dir} \n\n\n')
+                                     f'\nSet path: {config_data.get_photos_dir} \n\n\n',
+                            msg_type='error')
 
     time.sleep(0.5)
     try:
@@ -45,22 +44,12 @@ def check():
                 log_dispatcher.info(to_print=msg, to_write=msg)
         else:
             msg = f'Файл {filename} не найден.'
-            log_dispatcher.info(to_print=msg, to_write=msg)
+            log_dispatcher.info(to_print=msg, to_write=msg, msg_type='error')
 
 
 
     except:
         pass
-    time.sleep(0.5)
-
-    url = f'http://127.0.0.1:{config_data.get_port}'
-    try:
-        requests.get(url, timeout=1)
-        msg = f'Подключение к порту {config_data.get_port} установлено'
-        log_dispatcher.info(to_print=msg, to_write=msg)
-    except:
-        msg = f'Подключение к порту {config_data.get_port} не удалось установить'
-        log_dispatcher.info(to_print=msg, to_write=msg)
     time.sleep(0.5)
 
     if config_data.get_reg_variable == "female":
@@ -71,7 +60,7 @@ def check():
     val = input("Готов продолжить? Y/N\n")
     while val.lower() != 'y':
         if val.lower() == 'n':
-            log_dispatcher.info(to_print='Завершаю работу...')
+            log_dispatcher.info(to_print='Завершаю работу...', msg_type='error')
             time.sleep(4)
             exit()
         val = input("Не пиши херню, вот варианты - Y/N: \n")
@@ -79,6 +68,18 @@ def check():
     log_dispatcher.info(to_print=msg, to_write='Start work')
 
     return count_email
+
+
+def check_port_con(port):
+    url = f'http://127.0.0.1:{port}/'
+    try:
+        requests.get(url, timeout=1)
+        msg = f'Подключение к порту {port} установлено'
+        log_dispatcher.info(to_write=msg)
+    except:
+        msg = f'Подключение к порту {port} не удалось установить'
+        log_dispatcher.info(to_print=msg, to_write=msg, msg_type='error')
+    time.sleep(0.5)
 
 
 def baned(driver):

@@ -87,10 +87,10 @@ def create_driver(session, port):
     mla_url = f'http://127.0.0.1:{port}/api/v1/profile/start?automation=true&profileId=' + session
     resp = requests.get(mla_url)
     json = resp.json()
-    print(json)
     options = webdriver.ChromeOptions()
     options.add_argument("--use-fake-ui-for-media-stream")
     options.add_argument("--use-fake-device-for-media-stream")
+    options.add_argument("--auto-open-devtools-for-tabs")
     driver = webdriver.Remote(command_executor=json['value'], options=options)
     return driver
 
@@ -222,7 +222,7 @@ def get_photos_path(photos_dir):
     # Если список пустой, значит не было найдено файлов
     if not jpg_files:
         # raise Exception(f"No JPG files found in folder '{folder_path}'")
-        log_dispatcher.info(to_print='Папка с фото пустая', to_write='photos folder is empty')
+        log_dispatcher.info(to_print='Папка с фото пустая', to_write='photos folder is empty', msg_type='error')
         return None
 
     return jpg_files
@@ -277,7 +277,7 @@ def fold_names(photos_dir, photos_folder):
             subfolder = item
             log_dispatcher.info(to_write=f'second subfolder is: {subfolder}')
             break
-    print(f'subfolder: {subfolder}')
+    log_dispatcher.info(to_write=f'subfolder: {subfolder}')
     return subfolder
 
 

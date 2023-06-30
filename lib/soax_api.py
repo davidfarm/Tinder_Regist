@@ -47,11 +47,11 @@ def stick(name_id):
             if check_proxy(full_url):
                 break
             msg = 'Ошибка создания проски -_-'
-            log_dispatcher.info(to_print=msg, to_write=msg)
+            log_dispatcher.info(to_print=msg, to_write=msg, msg_type='error')
 
             if i == 3:
                 msg = 'Не удалось создать прокси'
-                log_dispatcher.info(to_print=msg, to_write=msg)
+                log_dispatcher.info(to_print=msg, to_write=msg, msg_type='error')
                 raise ValueError('Proxys is not a valid')
 
     requests.get(url, proxies={'http': full_url, 'https': full_url})

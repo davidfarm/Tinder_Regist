@@ -97,55 +97,60 @@ def error_handler(func_name):
                         continue
                     if func_name == "google_auth":
                         log_dispatcher.info(to_write='Google authorization error\n' + error_traceback)
-                        print(BOLD + DARK_YELLOW + "Ошибка Google авторизации" + RESET)
+                        # print(BOLD + DARK_YELLOW + "Ошибка Google авторизации" + RESET)
                         flag = True
                         raise GoogleAuthError
                     elif func_name == "login_in_tinder":
                         log_dispatcher.info(to_write='Tinder authorization error\n' + error_traceback)
-                        print(BOLD + DARK_YELLOW + "Ошибка при входе в тиндер (info - для подробностей)" + RESET)
+                        # print(BOLD + DARK_YELLOW + "Ошибка при входе в тиндер (info - для подробностей)" + RESET)
                         if not baned(ban_dp.get_driver):
-                            log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned')
+                            log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned',
+                                                msg_type='error')
                             ban_dp.set_status('Ban')
                         raise TinderLoginError
                     elif func_name == "sms_registration":
                         if not baned(ban_dp.get_driver):
-                            log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned')
+                            log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned',
+                                                msg_type='error')
                             ban_dp.set_status('Ban')
                         log_dispatcher.info(to_write='SMS registration error\n' + str(e))
-                        print(BOLD + DARK_YELLOW + "Ошибка СМС регистрации" + RESET)
+                        # print(BOLD + DARK_YELLOW + "Ошибка СМС регистрации" + RESET)
                         raise SMSRegistrationError
                     elif func_name == "model_profile":
                         log_dispatcher.info(to_write='Error in block 5.1\n' + str(e))
 
                         if not baned(ban_dp.get_driver):
-                            log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned')
+                            log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned',
+                                                msg_type='error')
                             ban_dp.set_status('Ban')
-                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.1" + RESET)
-                        break
+                        # print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.1" + RESET)
+                        raise ModelProfileError
                     elif func_name == "photos_fold":
                         if not baned(ban_dp.get_driver):
-                            log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned')
+                            log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned',
+                                                msg_type='error')
                             ban_dp.set_status('Ban')
 
                         log_dispatcher.info(to_write='Error in block 5.2\n' + error_traceback)
-                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.2" + RESET)
-                        break
+                        # print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.2" + RESET)
+                        raise PhotosFoldError
                     elif func_name == "model_profile_2":
                         if not baned(ban_dp.get_driver):
-                            log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned')
+                            log_dispatcher.info(to_print='Аккаунт забанен, исправляю', to_write='Account is banned',
+                                                msg_type='error')
                             ban_dp.set_status('Ban')
 
                         log_dispatcher.info(to_write='Error in block 5.3\n' + error_traceback)
-                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.3)" + RESET)
-                        break
+                        # print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.3)" + RESET)
+                        raise ModelProfile2Error
                     elif func_name == "end_registr":
                         log_dispatcher.info(to_write='Error in block 5.4\n' + error_traceback)
-                        print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.4" + RESET)
-                        break
+                        # print(BOLD + DARK_YELLOW + "Ошикба в блоке 5.4" + RESET)
+                        raise EndRegisterError
                     else:
                         log_dispatcher.info(to_write='Unknown error\n' + error_traceback)
-                        print("404 Error")
-                        break
+                        # print("404 Error")
+                        raise UnknownError
 
                     # if flag:
                     #     continue_var = input_dialog(func,
@@ -193,3 +198,9 @@ class CustomException(Exception):
 GoogleAuthError = CustomException('GoogleAuthError')
 TinderLoginError = CustomException('TinderLoginError')
 SMSRegistrationError = CustomException('SMSRegistrationError')
+ModelProfileError = CustomException('ModelProfileError')
+ModelProfile2Error = CustomException('ModelProfile2Error')
+PhotosFoldError = CustomException('PhotosFoldError')
+EndRegisterError = CustomException('EndRegisterError')
+UnknownError = CustomException('UnknownError')
+

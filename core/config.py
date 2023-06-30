@@ -17,10 +17,6 @@ class Config:
         return self.config.get('Settings', 'photos_dir')
 
     @property
-    def get_port(self):
-        return self.config.get('Settings', 'port')
-
-    @property
     def get_name_variation(self):
         return self.config.get('Settings', 'name_variation')
 
@@ -30,7 +26,10 @@ class Config:
 
     @property
     def get_group_id(self):
-        return self.config.get('Settings', 'group_id')
+        try:
+            return self.config.get('Settings', 'group_id')
+        except configparser.NoOptionError:
+            pass
 
     @property
     def get_change_account(self):
@@ -40,6 +39,5 @@ class Config:
 config_data = Config()
 log_dispatcher.info(to_write=f'CONFIG:\n'
                              f'{config_data.get_reg_variable}\n{config_data.get_photos_dir}\n'
-                             f'{config_data.get_port}\n{config_data.get_name_variation}\n'
                              f'{config_data.get_city}\n{config_data.get_group_id}\n'
                              f'{config_data.get_change_account}\n')

@@ -25,3 +25,148 @@ europa
 FA009
 True
 
+2023-06-25 13:43:15,467 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+
+2023-06-26 09:20:14,982 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+
+2023-06-26 09:24:22,594 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+
+[DEBUG[0m: CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+
+[34mDEBUG:CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+[0m
+[34mDEBUG:CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+[0m
+[34mDEBUG:CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+[0m
+2023-06-26 18:05:47,595 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+
+2023-06-26 18:07:04,784 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-26 18:07:05,287 - DEBUG - Путь в норме
+2023-06-26 18:07:05,796 - DEBUG - Кол-во почт в программе: 3
+2023-06-26 18:07:06,297 - DEBUG - Кол-во имен в session_names: 3
+2023-06-26 18:07:06,803 - DEBUG - Подключение к порту 34999 установлено
+2023-06-26 18:07:08,783 - DEBUG - Start work
+2023-06-26 18:07:19,529 - DEBUG - proxy is valid
+2023-06-26 18:07:30,648 - DEBUG - 204
+2023-06-26 18:07:35,046 - DEBUG - 204
+2023-06-26 18:07:40,133 - DEBUG - start add extension
+2023-06-26 18:21:31,716 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-26 18:21:32,221 - DEBUG - Путь в норме
+2023-06-26 18:21:32,727 - DEBUG - Кол-во почт в программе: 0
+2023-06-26 18:21:33,228 - DEBUG - Кол-во имен в session_names: 2
+2023-06-26 18:21:33,750 - DEBUG - Подключение к порту 34999 установлено
+2023-06-26 18:21:39,725 - DEBUG - Start work
+2023-06-26 18:23:25,172 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-26 18:23:25,674 - DEBUG - Путь в норме
+2023-06-26 18:23:26,175 - DEBUG - 
+
+
+[Errno 2] No such file or directory: 'res/gmail.xlsx'
+2023-06-26 18:23:26,676 - DEBUG - Файл res/session_names не найден.
+2023-06-26 18:23:27,179 - DEBUG - Подключение к порту 34999 установлено
+2023-06-26 18:36:43,407 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+
+2023-06-26 18:37:13,420 - DEBUG - ########################### NEW SESSION ###########################
+2023-06-26 18:37:13,923 - DEBUG - Путь в норме
+2023-06-26 18:37:14,424 - DEBUG - 
+
+
+[Errno 2] No such file or directory: 'res/gmail.xlsx'
+2023-06-26 18:37:14,925 - DEBUG - Файл res/session_names не найден.
+2023-06-26 18:37:15,429 - DEBUG - Подключение к порту 34999 установлено
+2023-06-28 13:46:42,959 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+
+2023-06-28 14:37:54,933 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+34999
+european
+europa
+FA009
+True
+
+2023-06-29 18:27:06,034 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+europa
+FA009
+True
+
+2023-06-30 11:36:20,601 - DEBUG - CONFIG:
+female
+G:\.shortcut-targets-by-id\1iputwP1o-lZbnCzYTKlxuWiyf8XK13me\Dating\Photo base
+europa
+FA009
+True
+
