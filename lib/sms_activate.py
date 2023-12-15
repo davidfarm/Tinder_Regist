@@ -1,6 +1,6 @@
 from smsactivate.api import SMSActivateAPI
 
-API_KEY = "9cBBf97c5d7f97356e911d9BcB8312f4"
+API_KEY = "B4e605e06576609130473ed256d08cB9"
 sa = SMSActivateAPI(API_KEY)
 sa.debug_mode = False
 

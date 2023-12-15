@@ -165,14 +165,36 @@ def end_registr(driver):
         log_dispatcher.info(to_write=f'EXCEPTION RUN END REG: {e}')
 
 
-def set_preference(driver):
-    timer(clicker, driver, "(//div[@class='D(b) Pos(r) Expand Bdrs(50%)'])[1]")
+def set_preference(driver, CHANGE_ACCOUNT_SETTINGS, min_age, max_age):
+    if CHANGE_ACCOUNT_SETTINGS:
+        driver.refresh()
+        # try:
+        #     timer(clicker, driver, "")
+        # except:
+        #     pass
+        # настройки профиля
+        timer(clicker, driver, "(//div[@class='D(b) Pos(r) Expand Bdrs(50%)'])[1]")
+        time.sleep(3)
+        # обозначаем 2 слайдера возраста (aria-valuenow - текущий возраст)
+        actions = ActionChains(driver)
+        right_slider = driver.find_element(By.XPATH, "(//button[@role='slider'])[3]")
+        left_slider = driver.find_element(By.XPATH, "(//button[@role='slider'])[2]")
 
-    actions = ActionChains(driver)
-    right_slider = driver.find_element(By.XPATH, "(//div[@class='t60fo43'])[2]")
-    time.sleep(1)
-    left_slider = driver.find_element(By.XPATH, "(//button[@role='slider'])[2]")
-    actions.click_and_hold(right_slider).move_by_offset(160, 0).release().perform()
-    actions.click_and_hold(left_slider).move_by_offset(40, 0).release().perform()
+        # Максимальное значение не больше чем нужно
+        for _ in range(100):
+            actions.click_and_hold(right_slider).move_by_offset(30, 0).release().perform()
+            if int(right_slider.get_attribute("aria-valuenow")) >= max_age: break
 
-    timer(clicker, driver, "(//*[name()='path'])[1]")
+        # Минималку до упора (18)
+        for _ in range(100):
+            actions.click_and_hold(left_slider).move_by_offset(-20, 0).release().perform()
+            if int(left_slider.get_attribute("aria-valuenow")) <= 18: break
+        # Минималку не больше чем нужно
+        for _ in range(100):
+            actions.click_and_hold(left_slider).move_by_offset(5, 0).release().perform()
+            if int(left_slider.get_attribute("aria-valuenow")) >= min_age: break
+
+        # галочка only show people in this range
+        driver.find_element(By.CSS_SELECTOR, "body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > aside:nth-child(1) > nav:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(8) > div:nth-child(2) > div:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > input:nth-child(1)").click()
+        # сохранить
+        timer(clicker,driver, "//a[@title='Back']")

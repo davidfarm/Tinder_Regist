@@ -17,6 +17,3 @@ import random
 import configparser
 import logging
 import os
-
-
-

@@ -165,7 +165,7 @@ def create_profile(session_name, port):
         "startUrl": f"https://tinder.com/ru",
         "extensions": {
             "enable": True,
-            "names": ["capmonster.crx"]
+            "names": ["capmonster.crx", "SelectorsHub.crx"]
         }
 
     }

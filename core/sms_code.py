@@ -40,7 +40,7 @@ def sms_registration(driver):
                     pass
             while flg1:
                 log_dispatcher.info(to_write='sms code not received')
-                send = input(YELLOW + f"Код не пришел. Ожидание кода {tot}с. Введите символ для продолжения: " + RESET)
+                # send = input(YELLOW + f"Код не пришел. Ожидание кода {tot}с. Введите символ для продолжения: " + RESET)
                 # if send == "y":
                 #     flg = False
                 #     base_flg = False

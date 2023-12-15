@@ -48,6 +48,8 @@ class Registration:
         self.GROUP_ID = config_data.get_group_id
         self.REG_VARIABLE = config_data.get_reg_variable
         self.CHANGE_ACCOUNT_SETTINGS = config_data.get_change_account
+        self.min_age = config_data.get_min_age
+        self.max_age = config_data.get_max_age
         self.gmail_check = check_gmail()
         security()
         self.session_count = self.count_email
@@ -113,7 +115,10 @@ class Registration:
         ban_dp.set_status('Active')
 
     def run_set_preference(self):
-        set_preference(self.driver)
+        log_dispatcher.info(to_write='run end_reg')
+        set_preference(self.driver, self.CHANGE_ACCOUNT_SETTINGS, self.min_age, self.max_age)
+        time.sleep(0.5)
+        ban_dp.set_status('Active')
 
     def finalization_invalid_session(self):
         log_dispatcher.info(to_print='Регистрация не завершена, записываю данные сессии...', msg_type='error')
@@ -137,6 +142,7 @@ class Registration:
         self.run_sms_registration()
         self.run_register()
         self.run_end_reg()
+        self.run_set_preference()
 
 
 class RunAll(Registration):
@@ -149,7 +155,8 @@ class RunAll(Registration):
             'self.run_login_tinder',
             'self.run_sms_registration',
             'self.run_register',
-            'self.run_end_reg'
+            'self.run_end_reg',
+            'self.run_set_preference'
         ]
 
     def check_end_command(self, i):
@@ -201,7 +208,7 @@ class RunAll(Registration):
         try:
             for _ in range(self.count_email):
                 log_dispatcher.info(to_write=f'len(all_func: {len(self.all_func)})')
-                while i < int(len(self.all_func) - 1):
+                while i < int(len(self.all_func) -1):
                     log_dispatcher.info(to_write=f'i: {i}')
                     eval(f'{self.all_func[i]}()')
                     i += 1
@@ -218,8 +225,8 @@ class RunAll(Registration):
                             raise StopIteration('Account banned, cant fix it')
 
                 # if self.CHANGE_ACCOUNT_SETTINGS:
-                #     self.run_set_preference()
-                self.run_end_reg()
+                self.run_set_preference()
+                # self.run_end_reg()
                 i = 0
                 time.sleep(1)
                 log_dispatcher.info(to_print='Аккаунт зарегестрировано!', to_write='Account was created!\n\n\n',

@@ -35,6 +35,15 @@ class Config:
     def get_change_account(self):
         return bool(self.config.get('Settings', 'change_account_settings'))
 
+    @property
+    def get_min_age(self):
+        return int(self.config.get('Settings', 'minimum_age'))
+
+    @property
+    def get_max_age(self):
+        return int(self.config.get('Settings', 'maximum_age'))
+
+
 
 config_data = Config()
 log_dispatcher.info(to_write=f'CONFIG:\n'
