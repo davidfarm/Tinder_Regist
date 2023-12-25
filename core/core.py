@@ -24,7 +24,7 @@ def new_session(session_name, proxy_host, proxy_port, proxy_type, proxy_username
 
 
 # @error_handler("starter")
-def start_session(city, group_id):
+def start_session(city, group_id, soax_password):
     """Starting session"""
     global group_ids
     global session_name
@@ -50,7 +50,7 @@ def start_session(city, group_id):
     proxy_host = "proxy.soax.com"
     proxy_type = "SOCKS"
     proxy_username = proxy_path_url
-    proxy_password = "o9wWEwXm7NH5RG2W"
+    proxy_password = soax_password
     proxy_port = "5000"
 
     driver, profile_id = new_session(session_name, proxy_host, proxy_port, proxy_type, proxy_username, proxy_password,

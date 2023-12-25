@@ -8,7 +8,7 @@ proxy_country = config.get('Settings', 'proxy_country')
 proxy_city = config.get('Settings', 'proxy_city')
 
 package_id = '76853'
-package_login = 'o9wWEwXm7NH5RG2W'
+package_login = 'AdrYQGEGnB2E9I7m'
 
 ips_id = ['at', 'au', 'be', 'br', 'ca', 'cz', 'fi', 'fr', 'de', 'it', 'jp',
           'nl', 'pl', 'pt', 'ro', 'es', 'se', 'tr', 'ua', 'gb', 'us']  # 21
@@ -62,7 +62,7 @@ def stick(name_id):
 def proxy(proxy_path_url):
     proxy_host = "proxy.soax.com"
     proxy_type = "SOCKS"
-    proxy_username = "o9wWEwXm7NH5RG2W"
+    proxy_username = "AdrYQGEGnB2E9I7m"
     proxy_password = ""
     ports = "5000"
 

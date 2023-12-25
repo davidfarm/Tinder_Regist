@@ -48,6 +48,7 @@ class Registration:
         self.GROUP_ID = config_data.get_group_id
         self.REG_VARIABLE = config_data.get_reg_variable
         self.CHANGE_ACCOUNT_SETTINGS = config_data.get_change_account
+        self.soax_password = config_data.proxy_soax_password
         self.min_age = config_data.get_min_age
         self.max_age = config_data.get_max_age
         self.gmail_check = check_gmail()
@@ -57,7 +58,7 @@ class Registration:
     def run_start_session(self):
 
         self.email, self.password, self.reserve, self.driver, self.photos_folder, self.session_name, self.group_ids, \
-            self.profile_id, self.name_id, self.PORT = start_session(self.CITY, self.GROUP_ID)
+            self.profile_id, self.name_id, self.PORT = start_session(self.CITY, self.GROUP_ID, self.soax_password)
         ban_dp.set_dp(self.driver)
 
         self.session_data = [self.email, self.password, self.reserve, self.photos_folder, self.session_name, self.group_ids, self.GROUP_ID]

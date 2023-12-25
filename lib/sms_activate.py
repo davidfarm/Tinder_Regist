@@ -1,6 +1,7 @@
 from smsactivate.api import SMSActivateAPI
+from core.config import config_data
 
-API_KEY = "B4e605e06576609130473ed256d08cB9"
+API_KEY = config_data.get_activate_key
 sa = SMSActivateAPI(API_KEY)
 sa.debug_mode = False
 

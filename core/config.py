@@ -32,6 +32,14 @@ class Config:
             pass
 
     @property
+    def proxy_soax_password(self):
+        return self.config.get('Settings', 'soax_password')
+
+    @property
+    def get_activate_key(self):
+        return self.config.get('Settings', 'sms-activate_key')
+
+    @property
     def get_change_account(self):
         return bool(self.config.get('Settings', 'change_account_settings'))
 
